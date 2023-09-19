@@ -2,108 +2,242 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width initial-scale=1, user-scalable=1">
-    <link rel="stylesheet" href="styles.css">
-    <title>Navmarg Research and Innovation Pvt Ltd</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Navmarg Research and Innovation Pvt. Ltd." />
-    <meta property="og:image" content="HomePage\Logo.jpg" />
-   
+    <meta property="og:image" content="Logo.jpg" />
+    <title> Home </title>
+    <link rel="icon" href="Icon.png" type="image/icon">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <link rel="stylesheet" href="styles.cssx">
 </head>
 
+
+
+
 <body>
-    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="Icon.png" />
 
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="HomePage\Icon.png" alt="icon" width="110" height="60">
+
+
+    <header class="text-gray-600 body-font bg-teal-400 shadow-md">
+        <div class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
+
+            <div
+                class="flex-shrink-0 w-20 h-20 bg-white text-indigo-500 rounded-full inline-flex items-center justify-center">
+                <a href="index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <img src="Icon.png" alt="Logo">
+                </a>
             </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>>
-            </ul>
-        </nav>
+
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <button onclick="window.location.href='index.html';"
+                    class="mr-5 inline-flex items-center  border-0 py-1 px-3 focus:outline-none hover:bg-gray-100 rounded font-medium title-font text-blue-900 mb-1 text-xl">Home
+                </button>
+
+                <button onclick="window.location.href='product.html';"
+                    class="mr-5 inline-flex items-center  border-0 py-1 px-3 focus:outline-none hover:bg-gray-100 rounded font-medium title-font text-blue-900 mb-1 text-xl">Product
+                </button>
+
+                <button onclick=" window.location.href='contact.html' ;"
+                    class="mr-5 inline-flex items-center  border-0 py-1 px-3 focus:outline-none hover:bg-gray-100 rounded font-medium title-font text-blue-900 mb-1 text-xl">Contact
+                </button>
+
+                <button onclick="window.location.href='about.html';"
+                    class="mr-5 inline-flex items-center  border-0 py-1 px-3 focus:outline-none hover:bg-gray-100 rounded font-medium title-font text-blue-900 mb-1 text-xl">About
+                </button>
+            </nav>
+
+        </div>
     </header>
-    
-    <section class="text-gray-600 body-font">
-        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-          <img class="logo" alt="logo" src="HomePage\Navmarg  logo transparent bg.png" width="500" height="400">
-          
-          <div class="Title">
-            <h1 class="Titlehead">Revolutionalizing the World,One Innovation at time</h1>
-           
-           <br> <p class="Introduction">We are an Innovation-Focused Company dedicated to our mission of forging a brighter world through our pioneering research initiatives </p>
-           </div>
-        </div>
-      </section>
 
-    <div class="feature-container">
-        <div class="feature-box">
-            <h2>OUR MISSION</h2>
-            <p>Transforming water treatment worldwide with advanced tech, addressing contamination, and pioneering innovations for societal and environmental well-being.</p>
-        </div>
-        <div class="feature-box">
-            <h2> OUR AIM</h2>
-            <p>To provide diverse solutions, particularly addressing global multifaceted water and environmental  challenges</p>
-        </div>
-        <div class="feature-box">
-            <h2>OUR R&D</h2>
-            <p>Encompasses diverse domains, from water treatment to digital sensors, geosciences, and applied chemical science.
-            </p>
-        </div>
-    </div>
-  
-    <br>
-    <h1 class="section-heading">WHAT WE DO</h1>
-    <div class="content">
-     
-        <div class="flowchart">
-            <div class="box vision-point">
-                <h2>Revolutionizing Water Treatment</h2>
-                <p>Introducing an advanced magnetic arsenic removal device to combat arsenic contamination worldwide.</p>
-            </div>
-            <div class="box vision-point">
-                <h2>Combating Diverse Issues</h2>
-                <p>Expanding our innovative solutions beyond arsenic treatment to address emerging environmental issues such as cadmium, uranium, and chromium contamination.</p>
-            </div>
-            <div class="box vision-point">
-                <h2>Comprehensive Community Initiatives</h2>
-                <p>Initiating projects like school water quality geo-mapping & digital sensor development for in-situ parameter detection through domain-embedded sensor technology.</p>
-            </div>
-            <div class="box challenge-point">
-                <h2>The Essential Challenge</h2>
-                <p>Ensuring clean and safe drinking water access, particularly in underserved regions, while driving sustainable societal and environmental impact through innovative, cross-sector solutions.</p>
-            </div>
-        </div>
-        <div class="image-container">
-            <img src="HomePage\Team.png" alt="Image 1" width="350" height="200">
-           
-            <img src="HomePage\Picture 3.jpg" alt="Image 3" width="300" height="400">
-        </div>
-    
-    </div>
 
-    
-    <footer class="footer-container">
-        <div class="footer-content">
-            <h2>Contact Information</h2>
-            <p>
-                Registered Address: Road No.-15,(First Building),Anand Niketan Society, Rajivnagar, Patliputra, Patna, Bihar-800013
-               <br>
-                Address: 104-D, Innovation Centre, MIT, Manipal, Karnataka-576104</p>
-            <p>Email:  navmarg.pvt.ltd@gmail.com
-            </p>
-            <p>Phone: +919958568358,+917488404654</p>
-            &copy; 2023 Navmarg Research and Innovation Pvt Ltd
+
+    <section class="text-gray-600 body-font shadow-md">
+        <div class="container mx-auto flex px-5 py-8 items-center justify-center flex-col">
+
+            <img class="logo" alt="logo" src="Navmarg  logo transparent bg.png" width="400" height="300"
+                style="transition: opacity 0.3s; opacity: 1;" onmouseover="this.style.opacity=0.5"
+                onmouseout="this.style.opacity=1">
+
+            <div class="text-center lg:w-2/3 w-full">
+                <h1 class="title-font sm:text-2xl text-2xl mb-4 font-medium text-gray-900">Revolutionalizing the
+                    world, one innovation at time</h1>
+                <p class="mb-8 leading-relaxed">We are an Innovation-Focused Company dedicated to our mission of forging
+                    a brighter world through our pioneering research initiatives</p>
+            </div>
         </div>
+    </section>
+
+
+
+
+    <section class="text-gray-600 body-font overflow-hidden ">
+        <div class="container px-5 py-20 mx-auto">
+            <div class="flex flex-wrap -m-4">
+
+                <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                        <h1 class="text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">OUR MISSION
+                        </h1>
+                        <p class="text-gray-900 body-font">Transforming water treatment worldwide with advanced tech,
+                            addressing contamination, and pioneering innovations for societal and environmental
+                            well-being.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                        <h1 class="text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">OUR AIM
+                        </h1>
+                        <p class="text-gray-900 body-font">To provide diverse solutions, particularly addressing
+                            global multifaceted water and environmental
+                            challenges.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="p-4 xl:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                        <h1 class="text-3xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">OUR R&D
+                        </h1>
+                        <p class="text-gray-900 body-font">Encompasses diverse domains, from water treatment to
+                            digital sensors, geosciences, and applied chemical
+                            science.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <br />
+    <br />
+
+
+    <section class="text-gray-600 body-font shadow-md">
+        <h1 class="text-3xl font-medium title-font text-teal-900 text-center">WHAT WE DO</h1>
+        <div class="container px-5 py-8 mx-auto flex flex-wrap">
+
+            <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div
+                        class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <img src="Icon.png">
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Revolutionizing Water Treatment
+                        </h2>
+                        <p class="leading-relaxed">Introducing an advanced magnetic arsenic removal device to combat
+                            arsenic contamination worldwide.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div
+                        class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <img src="Icon.png">
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Combating Diverse Issues</h2>
+                        <p class="leading-relaxed">Expanding our innovative solutions beyond arsenic treatment to
+                            address emerging environmental issues such as cadmium, uranium, and chromium contamination.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div
+                        class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <img src="Icon.png">
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Comprehensive Community
+                            Initiatives</h2>
+                        <p class="leading-relaxed">Initiating projects like school water quality geo-mapping & digital
+                            sensor development for in-situ parameter detection through domain-embedded sensor
+                            technology.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+                <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                    <div
+                        class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                        <img src="Icon.png">
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">The Essential Challenge</h2>
+                        <p class="leading-relaxed">Ensuring clean and safe drinking water access, particularly in
+                            underserved regions, while driving sustainable societal and environmental impact through
+                            innovative, cross-sector solutions.</p>
+                        <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <br />
+    <br />
+
+    <footer class="bg-teal-600 body-font">
+
+        <div class="container px-5 py-5 mx-auto">
+            <div class="flex flex-wrap -m-4">
+
+                <div class="lg:w-1/2 lg:mb-0 mb-6 p-4">
+                    <div class="h-full text-center">
+                        <p class="text-white body-font">Registered Address: Road No.-15,(First Building),Anand Niketan
+                            Society, Rajivnagar,
+                            <br />Patliputra, Patna, Bihar-800013
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 lg:mb-0 mb-6 p-4">
+                    <div class="h-full text-center">
+                        <div class="text-white body-font"> Address: 104-D, Innovation Centre, MIT, Manipal,
+                            Karnataka-576104
+                            <br />Email: navmarg.pvt.ltd@gmail.com
+                            <br />Phone: +919958568358,+917488404654</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class=" text-gray-600 body-font">
+                <div class="container px-5 py-8 mx-auto text-center">
+                    <p class="ml-3 text-xl text-white">©
+                        2023 Navmarg Research and Innovation Pvt Ltd
+
+                    </p>
+                </div>
+            </div>
+
     </footer>
 
-
-
-
-  
 </body>
+
 </html>
