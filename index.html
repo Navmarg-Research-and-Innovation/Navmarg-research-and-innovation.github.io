@@ -10,6 +10,7 @@
     <title> Home </title>
     <link rel="icon" href="Icon.png" type="image/icon">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 
@@ -127,11 +128,15 @@
     <section class="text-gray-600 body-font">
         <div class=" container mx-auto flex px-5 py-8 items-center justify-center flex-col">
 
-            <img class="logo" alt="logo" src="Navmarg  logo transparent bg.png" width="400" height="300"
-                style="transition: opacity 0.3s; opacity: 1;" onmouseover="this.style.opacity=0.5"
-                onmouseout="this.style.opacity=1">
+            <img class="mySlides w3-animate-right" src="Navmarg  logo transparent bg.png"
+                style="width: 400px; height: 300px;">
+            <img class=" mySlides w3-animate-right" src="https://dummyimage.com/400x300"
+                style="width: 400px; height: 300px;">
+            <img class="mySlides w3-animate-right" src="https://dummyimage.com/400x300"
+                style="width: 400px; height: 300px;">
 
-            <div class="text-center lg:w-2/3 w-full">
+
+            <div class=" text-center lg:w-2/3 w-full">
                 <h1 class="title-font sm:text-2xl text-2xl mb-4 font-medium text-gray-900">Revolutionalizing the
                     world, one innovation at time</h1>
                 <p class="mb-8 leading-relaxed">We are an Innovation-Focused Company dedicated to our mission of
@@ -140,6 +145,24 @@
             </div>
         </div>
     </section>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3500);
+        }
+    </script>
+
 
 
 
@@ -360,13 +383,13 @@
                     <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Contact</h2>
                     <nav class="list-none mb-10">
                         <li>
-                            <a class="text-white hover:text-gray-800">Email</a>
+                            <a href="mailto:arpitpatna3@gmail.com" class="text-white hover:text-gray-800">Email</a>
                         </li>
                         <li>
-                            <a class="text-white hover:text-gray-800">Phone</a>
+                            <a href="tel:+917488404654" class="text-white hover:text-gray-800">Phone</a>
                         </li>
                         <li>
-                            <a class="text-white hover:text-gray-800">Website</a>
+                            <a href="contact.html" target="_blank" class="text-white hover:text-gray-800">Website</a>
                         </li>
                     </nav>
                 </div>
@@ -375,14 +398,13 @@
                     <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Social Media</h2>
                     <nav class="list-none mb-10">
                         <li>
-                            <a class="text-white hover:text-gray-800">LinkedIn</a>
+                            <a href="#" class="text-white hover:text-gray-800">LinkedIn</a>
                         </li>
                         <li>
-                            <a class="text-white hover:text-gray-800">Faceboox</a>
-
+                            <a href="#" class="text-white hover:text-gray-800">Faceboox</a>
                         </li>
                         <li>
-                            <a class="text-white hover:text-gray-800">Twitter / X</a>
+                            <a href="#" class="text-white hover:text-gray-800">Twitter / X</a>
                         </li>
                     </nav>
                 </div>
@@ -391,16 +413,13 @@
                     <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">News & Events</h2>
                     <nav class="list-none mb-10">
                         <li>
-                            <a class="text-white hover:text-gray-800">First Link</a>
+                            <a href="#" class="text-white hover:text-gray-800">News</a>
                         </li>
                         <li>
-                            <a class="text-white hover:text-gray-800">Second Link</a>
+                            <a href="#" class="text-white hover:text-gray-800">Annual Report</a>
                         </li>
                         <li>
-                            <a class="text-white hover:text-gray-800">Third Link</a>
-                        </li>
-                        <li>
-                            <a class="text-white hover:text-gray-800">Fourth Link</a>
+                            <a href="#" class="text-white hover:text-gray-800">Third Link</a>
                         </li>
                     </nav>
                 </div>
@@ -408,10 +427,9 @@
         </div>
         <div class="bg-gray-100">
             <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 Navmarg Research and Innovation Pvt Ltd
-                    —
-                    <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
-                        target="_blank">@Navmarg</a>
+                <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 Navmarg Research and Innovation Pvt
+                    Ltd.
+                    <a href="#" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@Navmarg</a>
                 </p>
 
             </div>
