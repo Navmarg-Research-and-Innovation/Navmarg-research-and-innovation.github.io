@@ -2,7 +2,7 @@
 ## Source code development and management 
 
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Navmarg-Research-and-Innovation/website-dev)  ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Navmarg-Research-and-Innovation/website-dev) ![GitHub repo file count (file type)](https://img.shields.io/github/directory-file-count/Navmarg-Research-and-Innovation/website-dev)
+![GitHub repo size](https://img.shields.io/github/repo-size/Navmarg-Research-and-Innovation/navmarg-research-and-innovation.github.io)  ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Navmarg-Research-and-Innovation/navmarg-research-and-innovation.github.io) ![GitHub repo file count (file type)](https://img.shields.io/github/directory-file-count/Navmarg-Research-and-Innovation/navmarg-research-and-innovation.github.io)
 
 <br/>
 
