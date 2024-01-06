@@ -13,8 +13,7 @@
     environmental well-being. It primarily works in the domain of water treatment and filtration, water 
     monitoring and analysis, and the applications of embedded systems, applied chemistry and geosciences/">
   <meta name="author" content="Navmarg Research and Innovation Pvt. Ltd" />
-  <meta name="keywords"
-    content="Navmarg, Arsenic Filter, Kilkari Filter, Research, Water Treatment, Research Startup" />
+  <meta name="keywords" content="Navmarg, Arsenic Filter, Kilkari Filter, Research, Water Treatment, Research Startup, SDGs, SGD3" />
 
   <title> About </title>
   <link rel="icon" href="page-1/img/logo0.png" type="image/icon">
@@ -570,36 +569,52 @@
     </div>
   </section>
 
+  <script>
+      // Array of image paths
+      var imagePaths = [
+          'https://dummyimage.com/700x500',
+          'https://dummyimage.com/900x500',
+          'https://dummyimage.com/1200x500',
+          'https://dummyimage.com/950x500'
+      ];
+  
+      // Index to keep track of the current image
+      var currentIndex = 0;
+  
+      // Variable to store the timeout ID
+      var timeoutId;
+  
+      // Function to change the image source
+      function changeImage() {
+          // Update the image source
+          document.getElementById('sliderImage').src = imagePaths[currentIndex];
+  
+          // Increment the index for the next image
+          currentIndex = (currentIndex + 1) % imagePaths.length;
+  
+          // Call the function again after a delay (3.5 seconds in this case)
+          timeoutId = setTimeout(changeImage, 3500);
+      }
+  
+      // Function to pause the image slider
+      function pauseSlider() {
+          clearTimeout(timeoutId);
+      }
 
-
-    <script>
-    // Array of image paths
-    var imagePaths = [
-        'https://dummyimage.com/700x500',
-        'https://dummyimage.com/900x500',
-        'https://dummyimage.com/1200x500',
-        'https://dummyimage.com/950x500'
-    ];
-
-    // Index to keep track of the current image
-    var currentIndex = 0;
-
-    // Function to change the image source
-    function changeImage() {
-        // Update the image source
-        document.getElementById('sliderImage').src = imagePaths[currentIndex];
-
-        // Increment the index for the next image
-        currentIndex = (currentIndex + 1) % imagePaths.length;
-
-        // Call the function again after a delay (3 seconds in this case)
-        setTimeout(changeImage, 5000);
-    }
-
-    // Initial call to start the image slider
-    changeImage();
-</script>
-
+      // Function to resume the image slider
+      function resumeSlider() {
+          timeoutId = setTimeout(changeImage, 3500);
+      }
+  
+      // Add event listeners for mouseover and mouseout
+      var sliderImage = document.getElementById('sliderImage');
+      sliderImage.addEventListener('mouseover', pauseSlider);
+      sliderImage.addEventListener('mouseout', resumeSlider);
+  
+      // Initial call to start the image slider
+      changeImage();
+  </script>
+  
 
 
 
