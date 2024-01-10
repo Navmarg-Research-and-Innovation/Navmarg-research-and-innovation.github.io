@@ -7,22 +7,27 @@
 <br/>
 
 1. **Home**
-   - Everything
-   - What's New
-   - What we do
+   - **Aim** 
+   - **Why we are doing**
+   - **What we do**
+   - **Our Work**
+   - **Highlights**
 
 
 2. **About Us**
-   - Who We Are.
-   - Discover our Mission.
+   - **Who We Are**
+   - **Discover our Mission**
+   - **Our Associations**
+   - **Testimonials**
+   - **Photo Gallery**
+   - **Press Coverage**
+   - **Awards and Recognition**
+   - **News Articles**
    - **Resources and Investors**
      - Brochures
      - Annual Reports
      - CSR
      - Investors
-     - Photo Gallery
-     - Video Gallery
-     - Press Coverage
 
 
 4. **Research**
@@ -36,6 +41,11 @@
      - Publications
      - Thesis
      - Technology Presentations
+
+   - **Our Solution & Research Offerings**
+     - Overview of our research expertise
+     - Our work domains ( Slider section )
+   
    - **Facilities**
        - State of the Art Facilities
        - Discover our Operational Centers
