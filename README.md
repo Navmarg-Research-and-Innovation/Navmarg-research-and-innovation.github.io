@@ -35,16 +35,15 @@
    - Tackling Water Issues
    - Navigating Critical Water Challenges
    - Strategies for Water Sustainability
+   - **Our Solution & Research Offerings**
+     - Overview of our research expertise
+     - Our work domains ( Slider section )
    - **Ongoing Leading Research Initiatives**
      - Overview of Projects
      - Patents
      - Publications
      - Thesis
      - Technology Presentations
-
-   - **Our Solution & Research Offerings**
-     - Overview of our research expertise
-     - Our work domains ( Slider section )
    
    - **Facilities**
        - State of the Art Facilities
