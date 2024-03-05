@@ -6,71 +6,79 @@
 
 <br/>
 
-1. **Home**
-   - **Aim** 
-   - **Why we are doing**
-   - **What we do**
-   - **Our Work**
-   - **Highlights**
+
+```bash
 
 
-2. **About Us**
-   - **Who We Are**
-   - **Discover our Mission**
-   - **Our Associations**
-   - **Testimonials**
-   - **Photo Gallery**
-   - **Press Coverage**
-   - **Awards and Recognition**
-   - **News Articles**
-   - **Resources and Investors**
-     - Brochures
-     - Annual Reports
-     - CSR
-     - Investors
+
+1. Home
+├── Aim
+├── Why we are doing
+├── What we do
+├── Our Work - [ Horizontal ]
+└── Highlights
+
+2. About Us
+├── Who We Are
+├── Discover our Mission
+├── Our Associations
+├── Testimonials
+├── Photo Gallery
+├── Press Coverage
+├── Awards and Recognition
+└── News Articles
+└── Resources and Investors
+    ├── Brochures
+    ├── Annual Reports
+    ├── CSR
+    └── Investors
+
+3. Research
+├── Water Challenges
+├── Tackling Water Issues
+├── Navigating Critical Water Challenges
+├── Strategies for Water Sustainability
+├── Our Solution & Research Offerings
+│   ├── Overview of our research expertise
+│   └── Our work domains - [ Horizontal ]
+├── Ongoing Leading Research Initiatives
+│   ├── Overview of Projects
+│   ├── Patents
+│   ├── Publications
+│   ├── Thesis
+│   └── Technology Presentations
+└── Facilities
+    ├── State of the Art Facilities
+    ├── Discover our Operational Centers
+    └── Our Research Lab, Factories, Plants
+
+4. Products
+├── Cutting Edge Water Technologies
+├── Water Treatment Solutions
+├── Sensing Technologies
+├── Quality Mapping Projects
+└── Clients and Installations
+    ├── Head of Government Projects
+    ├── Head of Pilot Testing’s
+    ├── CSR Projects
+    ├── Project Footprint (DDWS and Our)
+    └── The People Behind Our Success
+
+5. Team
+├── Our Business-Driven Professionals
+├── Mentors and Advisors
+├── Key Partners
+└── Careers
+    ├── Positions in Research Projects
+    ├── Current Opening in Company
+    └── Internships
+
+6. Contact Us
+├── Our Locations
+└── Enquiry Form
+
+```
+
+<br/>
 
 
-4. **Research**
-   - **Water Challenges**
-   - **Tackling Water Issues**
-   - **Navigating Critical Water Challenges**
-   - **Strategies for Water Sustainability**
-   - **Our Solution & Research Offerings**
-     - Overview of our research expertise
-     - Our work domains ( Slider section )
-   - **Ongoing Leading Research Initiatives**
-     - Overview of Projects
-     - Patents
-     - Publications
-     - Thesis
-     - Technology Presentations
-   
-   - **Facilities**
-       - State of the Art Facilities
-       - Discover our Operational Centers
-       - Our Research Lab, Factories, Plants
-
-5. **Products**
-   - **Cutting Edge Water Technologies**
-   - **Water Treatment Solutions**
-   - **Sensing Technologies**
-   - **Quality Mapping Projects**
-   - **Clients and Installations**
-     - Head of Government Projects
-     - Head of Pilot Testing’s
-     - CSR Projects
-     - Project Footprint (DDWS and Our)
-     - The People Behind Our Success
-
-6. **Team**
-   - **Our Business-Driven Professionals**
-   - **Mentors and Advisors**
-   - **Key Partners**
-   - **Careers**
-     - Positions in Research Projects
-     - Current Opening in Company
-     - Internships
-
-7. **Contact Us**
-   - **Our Locations**
-   - **Enquiry Form**
