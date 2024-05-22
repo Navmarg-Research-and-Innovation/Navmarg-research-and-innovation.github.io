@@ -6,7 +6,21 @@ error_reporting(E_ALL);
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     session_start();
 
-    $senderEmail = $_POST['email'];
+    // Sanitize input data
+    $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    $phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
+    $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+
+    // Validate email format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "<script type='text/javascript'>alert('Invalid email format. Please provide a valid email address.');
+            window.history.go(-1);
+            </script>";
+        exit;
+    }
+
+    $senderEmail = $email;
     $timeWindow = 3600;
     $maxSubmissionsEmail = 2;
     $maxSubmissionsIP = 2;
@@ -50,11 +64,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     session_write_close();
-
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $message = $_POST['message'];
 
     if (empty($name) || empty($email) || empty($phone) || empty($message)) {
         echo "<script type='text/javascript'>alert('Please fill in all required fields.');
