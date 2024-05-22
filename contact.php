@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   
 
     // Send the email
-    $to = "abhijeetkr.sci@gmail.com"; // Change receiving email id
+    $to = "navmarg.pvt.ltd@gmail.com"; // Change receiving email id
     $content = "Name: " . $name . "\r\nContact email: " . $email . "\r\nPhone number: " . $phone . "\r\n\r\nMessage:\r\n\r\n" . $message;
     $headers = "From: " . $email . "\r\n";
 
