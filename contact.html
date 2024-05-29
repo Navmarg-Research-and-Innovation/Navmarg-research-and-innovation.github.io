@@ -21,8 +21,13 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
+
 
 <body>
 
@@ -30,19 +35,22 @@
         AOS.init();
     </script>
 
-<!--Header section-->
-    <header class="body-font bg-gradient-to-r from-cyan-400 via-teal-300 to-teal-10 shadow-md" style="border-bottom:
-        2px solid rgba(255, 255, 255, 0.5);">
+    
 
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+<!--Header section-->
+    <header class="body-font bg-gradient-to-r from-cyan-500 via-teal-400 to-teal-0 shadow-md">
+
+        <div class="container mx-auto flex flex-wrap p-2 items-center justify-between">
             <a href="index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                 <img alt="logo0"
                     class="w-24 h-24 object-cover object-center rounded-full inline-block items-center justify-center bg-white"
                     src="page-1\img\logo0.webp">
-                <h1 class="ml-3 sm:text-3xl text-2xl font-medium title-font font-sans mb-4 text-blue-900">Navmarg
-                    Research and
+                <h1 class="ml-3 mt-5 sm:text-3xl text-2xl font-medium title-font font-sans mb-4 text-blue-900">Navmarg
+                    Research <br> and
                     Innovation</h1>
             </a>
+
+            <!--Logos-->
 
             <div class="hidden lg:block md:ml-auto ml-3 flex-wrap items-center text-base justify-center ">
 
@@ -69,43 +77,49 @@
                     src="page-1\img\Azadi Ka amrit mahatosav.webp"></a>
             </div>
 
+
+            <!--Navbar, button to other pages-->
+
+            <button data-collapse-toggle="navbar-default" type="button" class="mb-2 inline-flex items-center p-2 me-2 w-10 h-10 justify-center text-sm text-gray-700 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+
+            <div class="hidden w-full md:block md:w-auto container mx-auto flex flex-col items-center pb-3 ps-3 pe-3" id="navbar-default">
+
+                <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+    
+                    <button onclick=" window.location.href='index.html';"
+                        class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">HOME
+                    </button>
+    
+                    <button onclick=" window.location.href='about.html';"
+                        class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">ABOUT
+                    </button>
+    
+                    <button onclick="window.location.href='research.html';"
+                        class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">RESEARCH
+                    </button>
+    
+                    <button onclick="window.location.href='product.html';"
+                        class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">PRODUCTS
+                    </button>
+    
+                    <button onclick="window.location.href='team.html';"
+                        class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full">TEAM
+                    </button>
+    
+                    <button onclick=" window.location.href='contact.html' ;"
+                        class="mr-5 inline-flex items-center border-0 py-1 px-3 bg-teal-200 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full">CONTACT
+                    </button>
+                </nav>
+            </div>
+
         </div>
     </header>
 
-<!--Links to other pages-->
-    <section class="body-font">
-
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-
-            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-
-                <button onclick=" window.location.href='index.html';"
-                    class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">HOME
-                </button>
-
-                <button onclick=" window.location.href='about.html';"
-                    class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">ABOUT
-                </button>
-
-                <button onclick="window.location.href='research.html';"
-                    class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">RESEARCH
-                </button>
-
-                <button onclick="window.location.href='product.html';"
-                    class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">PRODUCTS
-                </button>
-
-                <button onclick="window.location.href='team.html';"
-                    class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full">TEAM
-                </button>
-
-                <button onclick=" window.location.href='contact.html' ;"
-                    class="mr-5 inline-flex items-center border-0 py-1 px-3 bg-teal-200 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">CONTACT
-                </button>
-            </nav>
-
-        </div>
-    </section>
 
 <!--Google Maps with contact details-->
     <section class="text-gray-600 body-font relative">
@@ -121,7 +135,9 @@
                 <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
                     <div class="lg:w-1/2 px-6">
                         <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
-                        <p class="mt-1">104-D, Innovation Centre, MIT, Manipal, Karnataka-576104
+                        <p class="mt-1"> 104D, Student Startups,  Innovation Centre, MIT-MAHE, Manipal Udupi, Karnataka-576104
+                        </p>
+                        <p class="mt-1">Regd. Road No.-15, Anand Niketan Society, Rajivnagar, Patliputra, Patna, Bihar-800013
                         </p>
                     </div>
                     <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
@@ -209,87 +225,65 @@
     </nav>
 
 <!--Footer section-->
-    <footer class="text-white body-font bg-teal-950">
-        <div
-            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-                <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-                    <div
-                        class="flex-shrink-0 w-20 h-20 bg-white text-indigo-500 rounded-full inline-flex items-center justify-center">
-                        <a href="index.html"
-                            class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                            <img src="page-1/img/logo0.webp" alt="logo0">
-                        </a>
-                    </div>
-                    <span class="ml-3 text-xl"><br />Navmarg Research and Innovation</span>
+<footer class="text-white body-font bg-teal-500 p-3">
+    <div class="mx-auto max-w-screen-xl">
+        <div class="md:flex md:justify-between m-5 text-center justify-center items-center flex-row">
+            <div class="mb-6 md:mb-0 mt-6">
+                <a href="index.html" class="flex items-center">
+                    <img alt="logo0"
+                class="w-24 h-24 object-cover object-center rounded-full inline-block items-center justify-center bg-white"
+                src="page-1\img\logo0.webp">
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white ms-5 text-wrap">Navmarg Research & Innovation</span>
                 </a>
-                <p class="mt-2 text-sm text-white">104-D, Innovation Centre, MIT, Manipal, Karnataka-576104
-                </p>
-                <p class="mt-2 text-sm text-white">Regd. Road No.-15, Anand
-                    Niketan Society, Rajivnagar,
-                    Patliputra, Patna, Bihar-800013
-                </p>
             </div>
-
-            <div class=" flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-
-                <div class="lg:w-1/3 md:w-1/2 w-full px-4">
-                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Contact</h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a href="mailto:navmarg.pvt.ltd@gmail.com" class="text-white">Email</a>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div>
+                    <h2 class="mb-3 text-md font-semibold text-white uppercase">Contact Us</h2>
+                    <ul class="text-white">
+                        <li class="mb-4">
+                            <a href="mailto:navmarg.pvt.ltd@gmail.com" class="hover:underline" target="_blank"><i class="fa-solid fa-envelope"></i> Email</a>
                         </li>
                         <li>
-                            <a href="tel:+917488404654" class="text-white">Phone</a>
+                            <a href="tel:+917488404654" class="hover:underline"><i class="fa-solid fa-phone"></i> Phone</a>
                         </li>
-                        <li>
-                            <a href="contact.html" target="_blank" class="text-white">Website</a>
-                        </li>
-                    </nav>
+                    </ul>
                 </div>
-
-                <div class="lg:w-1/3 md:w-1/2 w-full px-4">
-                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Social Media
-                    </h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a href="https://www.linkedin.com/company/navmarg-research-and-innovation-private-limited/"
-                                class="text-white">LinkedIn</a>
+                <div>
+                    <h2 class="mb-4 text-md font-semibold text-white uppercase">Follow Us</h2>
+                    <ul class="text-white">
+                        <li class="mb-4">
+                            <a href="https://www.linkedin.com/company/navmarg-research-and-innovation-private-limited/" class="hover:underline "><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/people/Navmarg-Research-and-Innovation-Private-Limited/61553628548617/"
-                                class="text-white">Faceboox</a>
+                            <a href="https://www.facebook.com/people/Navmarg-Research-and-Innovation-Private-Limited/61553628548617/" class="hover:underline"><i class="fa-brands fa-facebook"></i> Facebook</a>
                         </li>
-                    </nav>
+                    </ul>
                 </div>
-
-                <div class="lg:w-1/3 md:w-1/2 w-full px-4">
-                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">News & Events
-                    </h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a href="about.html" class="text-white">News</a>
+                <div>
+                    <h2 class="mb-4 text-md font-semibold text-white uppercase">News & Events</h2>
+                    <ul class="text-white">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline"><i class="fa-solid fa-newspaper"></i> News</a>
                         </li>
-                        <li>
-                            <a href="about.html" class="text-white">Annual Report</a>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline"><i class="fa-solid fa-chart-line"></i> Annual Report</a>
                         </li>
-                        <li>
-                            <a href="about.html" class="text-white">Gallery</a>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline"><i class="fa-solid fa-image"></i> Gallery</a>
                         </li>
-                    </nav>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="bg-gray-100">
-            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                <p class="text-gray-500 text-sm text-center sm:text-left">© 2023 Navmarg Research and
-                    Innovation Pvt
-                    Ltd.
-                </p>
-
-            </div>
+        <hr class="border-gray-200 sm:mx-auto lg:mb-3" />
+        <div class="sm:flex sm:items-center sm:justify-center text-center">
+            <span class="text-sm text-white text-center"><a href="index.html" class="hover:underline">© 2023 Navmarg Research and
+                Innovation Pvt
+                Ltd.</a>
+            </span>
         </div>
-    </footer>
+    </div>
+</footer>
 
 </body>
 </html>
