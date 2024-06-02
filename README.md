@@ -24,10 +24,10 @@
 
 1. Home
 ├── Aim
-├── Why we are doing
+├── Why we are doing (Stats)
 ├── What we do
-├── Our Work - [ Horizontal ]
-└── Highlights
+├── Highlights of latest news,patents,publications & products
+└──  Our Work - [ Horizontal ]
 
 2. About Us
 ├── Who We Are
