@@ -27,6 +27,39 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
+    <style>
+      .container-display{
+        width: 100%;
+        width:820px;
+        height: 340px;
+        display: flex;
+        gap: 10px;
+        margin-inline: 50px;
+      }
+      .card{
+        min-width: 70px;
+        height: 100%;
+        border-radius: 30px;
+        display: flex;
+        align-items: flex-end;
+        flex-grow: 1;
+        position: relative;
+        transition: flex-grow 0.5s ease;
+      }
+      .card:hover{
+        flex-grow: 7;
+      }
+      .card-content > .title{
+        margin-left: 10px;
+        translate: 0 100%;
+        opacity: 0;
+      }
+      .card:hover .title{
+        opacity:1;
+        translate: 0 0;
+      }
+    </style>
+
 </head>
 
 
@@ -123,7 +156,7 @@
 
 <!--About title section-->
   <section>
-    <div class="bg-image bg-cover bg-center w-full md:mb-10" >
+    <div class="bg-image bg-cover bg-center w-full" >
 
       <div class="container md:pt-20 md:px-20 p-10 mx-auto max-w-full md:my-0 2xl:my-20">
         <div class="flex w-full mb-5 px-8 flex-wrap">
@@ -134,7 +167,7 @@
           <div class="h-1 w-40 bg-teal-500 px-8 flex-wrap rounded-full" data-aos="fade-right" data-aos-duration="1500"></div>
         </div>
         <div class="px-8 text-black">
-          <h1 class="sm:text-4xl text-xl title-font lg:w-2/3 lg:mb-0 mb-4 typing-demo">
+          <h1 class="sm:text-4xl text-2xl title-font lg:w-2/3 lg:mb-0 mb-4 typing-demo">
             <div data-aos="fade-right" data-aos-duration="2000">
               Navigating Practical
               Solutions
@@ -153,23 +186,15 @@
     </div>
   </section>
   
-
-
-
-
-
-
-  
-
   <!--Who we are section-->
-  <section class="body-font shadow-sm mb-10" data-aos="fade-up">
+  <section class="body-font" data-aos="fade-up">
     <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
       <div class="lg:max-w-lg lg:w-full md:w-3/4 w-5/6 mb-10 md:mb-0">
         <img class="object-cover object-center rounded shadow-md" alt="hero-navmarg" src="page-2/about-navmarg.webp">
       </div>
       <div
         class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-        <h1 class="sm:text-4xl text-2xl text-teal-500 tracking-widest font-bold title-font mb-4">WHO WE ARE
+        <h1 class=" text-4xl text-teal-500 tracking-widest font-bold title-font mb-4">WHO WE ARE
         </h1>
         <div data-aos="fade-up">
           <p class="leading-relaxed text-left">We are group of young researchers having an extensive background in
@@ -186,16 +211,14 @@
     </div>
   </section>
 
-
-
-
+<hr>
 
 <!--Mission & Values section-->
   <section class="body-font">
-    <div class="container px-5 py-24 mx-auto">
+    <div class="container px-5 py-20 mx-auto">
 
       <div class="text-center mb-20">
-        <h1 class="sm:text-4xl text-2xl text-teal-500 tracking-widest font-bold title-font mb-4">OUR MISSION & VALUES</h1>
+        <h1 class="text-4xl text-teal-500 tracking-widest font-bold title-font mb-4">OUR MISSION & VALUES</h1>
         <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500" data-aos="fade-up">We aspire to
           ensure universal
           access to safe and clean water through effective, sustainable, and affordable solutions in water and
@@ -213,7 +236,7 @@
         <i class="fa-solid fa-seedling"></i>
        </div>
         <div class="flex-grow text-left mt-6 sm:mt-0">
-          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Environmental Treatment Techniques</h2>
+          <h2 class="text-gray-900 text-xl title-font font-medium mb-2">Environmental Treatment Techniques</h2>
           <p class="leading-relaxed text-left text-base">Transforming environmental treatment, Navmarg R&I excels in
             pioneering
             solutions. Our Magnetic Arsenic Removal Unit (MARU), driven by patented Molecular Magnetic Treatment
@@ -227,7 +250,7 @@
       <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
         data-aos="zoom-in-right">
         <div class="flex-grow text-left mt-6 sm:mt-0">
-          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Digital Sensor Development</h2>
+          <h2 class="text-gray-900 text-xl title-font font-medium mb-2">Digital Sensor Development</h2>
           <p class="leading-relaxed text-base">Leading the charge in innovation, Navmarg R&I spearheads Digital Sensor
             Development for Pipeline Schemes, targeting iron, arsenic, and pathogens. Our pioneering Multiparameter
             Quality Devices, IoT-based, extend beyond, covering societies, university campuses, and large areas,
@@ -247,7 +270,7 @@
           <i class="fa-solid fa-flask"></i>
         </div>
         <div class="flex-grow text-left mt-6 sm:mt-0">
-          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Applied Sciences</h2>
+          <h2 class="text-gray-900 text-xl title-font font-medium mb-2">Applied Sciences</h2>
           <p class="leading-relaxed text-base">At Navmarg R&I, we excel in Applied Sciences Domains—Geosciences,
             Chemical Studies, and Applied Engineering. Our expertise spans Chemical Analysis, Sophisticated
             Instrumentation, and Utilization Studies in water. From Engineering Design to Dynamics, Lab to Fabrication,
@@ -259,16 +282,13 @@
     </div>
   </section>
 
-
-
-
-
+<hr>
 
 <!--Our Associations section-->
-  <section class="body-font">
+  <!--<section class="body-font">
     <div class="container mx-auto flex px-5 py-12 items-center justify-center flex-col">
       <div class="text-center lg:w-2/3 w-full">
-        <h1 class="sm:text-4xl text-2xl text-teal-500 tracking-widest font-bold title-font mb-20" data-aos="fade-up">OUR
+        <h1 class="text-4xl text-teal-500 tracking-widest font-bold title-font mt-8" data-aos="fade-up">OUR
           ASSOCIATIONS</h1>
       </div>
       <div class="md:p-2 p-1 w-full" data-aos="fade-up">
@@ -276,9 +296,66 @@
           src="page-2/Associatiosn for WEB.webp">
       </div>
     </div>
+  </section>-->
+
+  <section class="body-font">
+    <div class="container mx-auto flex px-5 pt-8 items-center justify-center flex-col">
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="text-4xl text-teal-500 tracking-widest font-bold title-font mt-8" data-aos="fade-up">OUR
+          ASSOCIATIONS</h1>
+      </div>
+    </div>
   </section>
 
-  <hr>
+  
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 m-5 md:mb-20 md:mt-10 md:ms-20">
+        <div data-aos="fade-right" data-aos-duration="2000">
+          <img class="hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105" src="page-2/Kilkari.webp" alt="">
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2000">
+          <img class="hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105" src="page-2/Sarkar.webp" alt="">
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2000"> 
+          <img class=" hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105" src="page-2/Sarkar Lok.webp" alt="">
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2000">
+          <img class="hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105" src="page-2/IIT Patna.webp" alt="">
+        </div>
+
+      
+
+        <div data-aos="fade-right" data-aos-duration="2000">
+            <img class="hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105" src="page-2/Mahavir.webp" alt="">
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2000">
+            <img class="hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105" src="page-2/CSIR.webp" alt="">
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2000">
+            <img class="hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105" src="page-2/Startup.webp" alt="">
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2000">
+            <img class="hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105" src="page-2/Mahe.webp" alt="">
+        </div>
+ 
+
+
+        <div data-aos="fade-right" data-aos-duration="2000">
+          <img class="hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105" src="page-2/Unicef.webp" alt="">
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2000">
+            <img class="hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105" src="page-2/ICICI.webp" alt="">
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2000">
+            <img class="hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105" src="page-2/Government.webp" alt="">
+        </div>
+
+    </div>
+
+
+  
+
+<hr>
 
 <!--Testimonials section-->
   <section class="text-gray-600 body-font">
