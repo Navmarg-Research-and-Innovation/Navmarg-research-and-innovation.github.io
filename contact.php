@@ -9,7 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Sanitize input data
     $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-    $phone = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
     $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 
     // Validate email format
@@ -65,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     session_write_close();
 
-    if (empty($name) || empty($email) || empty($phone) || empty($message)) {
+    if (empty($name) || empty($email) || empty($message)) {
         echo "<script type='text/javascript'>alert('Please fill in all required fields.');
             window.history.go(-1);
             </script>";
@@ -74,10 +73,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $toEmail = "navmarg.pvt.ltd@gmail.com";
     $mailHeaders = "From: " . $name . "<" . $email . ">\r\n";
-    $mailBody = "User Name: " . $name . "\n";
-    $mailBody .= "User Email: " . $email . "\n";
-    $mailBody .= "Phone: " . $phone . "\n";
-    $mailBody .= "Content: " . $message . "\n";
+    $mailBody = "Name: " . $name . "\n";
+    $mailBody .= "Email: " . $email . "\n";
+    $mailBody .= "Message: " . $message . "\n";
 
     if (mail($toEmail, "Message from Navmarg Website !", $mailBody, $mailHeaders)) {
         echo "<script type='text/javascript'>alert('Hi " . $name . ", thank you for reaching out. We will get back to you shortly.');
