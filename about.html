@@ -835,6 +835,44 @@
     </ul>
   </nav>
 
+  <!-- Scroll-to-top button -->
+  <button
+  type="button"
+  class="!fixed bottom-10 end-10 hidden bg-teal-500 p-3 text-lg hover:text-teal-500 font-medium uppercase leading-tight text-white 
+  shadow-md transition duration-150 ease-in-out hover:bg-white hover:shadow-lg 
+  active:bg-white hover:scale-110 hover:border-teal-500 border border-white"
+  id="btn-back-to-top">
+  <span>
+    <i class="fa-solid fa-arrow-up"></i>
+  </span>
+</button>
+
+<!-- JavaScript to handle scrolling -->
+<script>
+    // Get the button
+    const mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    const scrollFunction = () => {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.classList.remove("hidden");
+      } else {
+        mybutton.classList.add("hidden");
+      }
+    };
+    const backToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    window.addEventListener("scroll", scrollFunction);              
+</script>
+
 
 
 <!--Footer section-->
