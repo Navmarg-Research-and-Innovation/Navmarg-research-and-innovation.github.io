@@ -1,191 +1,261 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta property="og:image" content="page-1/img/logo0.webp" />
-    <meta property="og:title"
-      content="Navmarg Research and Innovation Pvt. Ltd." />
-    <meta name="description"
-      content="Research-based startup working on transforming water challenges 
+    <meta property="og:title" content="Navmarg Research and Innovation Pvt. Ltd." />
+    <meta name="description" content="Research-based startup working on transforming water challenges 
     with advanced technology, addressing contamination, and pioneering innovations for societal and 
     environmental well-being. It primarily works in the domain of water treatment and filtration, water 
     monitoring and analysis, and the applications of embedded systems, applied chemistry and geosciences/">
     <meta name="author" content="Navmarg Research and Innovation Pvt. Ltd" />
     <meta name="keywords"
-      content="Navmarg, Arsenic Filter, Kilkari Filter, Research, Water Treatment, Research Startup, SDGs, SGD3" />
+        content="Navmarg, Arsenic Filter, Kilkari Filter, Research, Water Treatment, Research Startup, SDGs, SGD3" />
 
     <title> About </title>
     <link rel="icon" href="page-1\img\logo0.webp" type="image/icon">
-    <script
-      src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
-      rel="stylesheet" />
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
-  </head>
+    <style>
+      .container-display{
+        width: 100%;
+        width:820px;
+        height: 340px;
+        display: flex;
+        gap: 10px;
+        margin-inline: 50px;
+      }
+      .card{
+        min-width: 70px;
+        height: 100%;
+        border-radius: 30px;
+        display: flex;
+        align-items: flex-end;
+        flex-grow: 1;
+        position: relative;
+        transition: flex-grow 0.5s ease;
+      }
+      .card:hover{
+        flex-grow: 7;
+      }
+      .card-content > .title{
+        margin-left: 10px;
+        translate: 0 100%;
+        opacity: 0;
+      }
+      .card:hover .title{
+        opacity:1;
+        translate: 0 0;
+      }
+    </style>
 
-  <body>
+</head>
+
+
+<body>
 
     <script>
-    AOS.init();
-  </script>
+        AOS.init();
+    </script>
 
-    <!--Header section-->
-    <header
-      class="body-font bg-gradient-to-r from-cyan-500 via-teal-400 to-teal-0 shadow-md">
+    
 
-      <div
-        class="container mx-auto flex flex-wrap p-2 items-center justify-between">
-        <a href="index.html"
-          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <img alt="logo0"
-            class="w-24 h-24 object-cover object-center rounded-full inline-block items-center justify-center bg-white"
-            src="page-1\img\logo0.webp">
-          <h1
-            class="ml-3 mt-5 sm:text-3xl text-2xl font-medium title-font font-sans mb-4 text-blue-900">Navmarg
-            Research <br> and
-            Innovation</h1>
-        </a>
+<!--Header section-->
+    <header class="body-font bg-gradient-to-r from-cyan-500 via-teal-400 to-teal-0 shadow-md">
 
-        <!--Logos-->
+        <div class="container mx-auto flex flex-wrap p-2 items-center justify-between">
+            <a href="index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img alt="logo0"
+                    class="w-24 h-24 object-cover object-center rounded-full inline-block items-center justify-center bg-white"
+                    src="page-1\img\logo0.webp">
+                <h1 class="ml-3 mt-5 sm:text-3xl text-2xl font-medium title-font font-sans mb-4 text-blue-900">Navmarg
+                    Research <br> and
+                    Innovation</h1>
+            </a>
 
-        <div
-          class="hidden lg:block md:ml-auto ml-3 flex-wrap items-center text-base justify-center ">
+            <!--Logos-->
 
-          <a href="#" target="_blank">
-            <img alt="logo3"
-              class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
-              src="page-1\img\startup bihar.webp"></a>
+            <div class="hidden lg:block md:ml-auto ml-3 flex-wrap items-center text-base justify-center ">
 
-          <a href="#" target="_blank">
-            <img alt="logo3"
-              class="w-24 h-24 mb-8 object-cover object-center inline-block border-0"
-              src="page-1\img\Startup_India-removebg-preview.webp"></a>
+                <a href="#" target="_blank">
+                    <img alt="logo3" class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
+                        src="page-1\img\startup bihar.webp"></a>
 
-          <a><img alt="logo1"
-              class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
-              src="page-1\img\SHODH for web.webp"></a>
+                <a href="#" target="_blank">
+                    <img alt="logo3" class="w-24 h-24 mb-8 object-cover object-center inline-block border-0"
+                        src="page-1\img\Startup_India-removebg-preview.webp"></a>
 
-          <a href="http://www.kilkaribihar.in/" target="_blank">
-            <img alt="logo2"
-              class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
-              src="page-1\img\PNG-Kilkari Logo.webp"></a>
+                <a><img alt="logo1" class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
+                        src="page-1\img\SHODH for web.webp"></a>
 
-          <a href="https://ejalshakti.gov.in/JJM/Login.aspx?Ty=se"
-            target="_blank">
-            <img alt="logo4"
-              class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
-              src="page-1\img\logo4.webp"></a>
+                <a href="http://www.kilkaribihar.in/" target="_blank">
+                    <img alt="logo2" class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
+                        src="page-1\img\PNG-Kilkari Logo.webp"></a>
 
-          <a> <img alt="logo5"
-              class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
-              src="page-1\img\Azadi Ka amrit mahatosav.webp"></a>
-        </div>
+                <a href="https://ejalshakti.gov.in/JJM/Login.aspx?Ty=se" target="_blank">
+                    <img alt="logo4" class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
+                        src="page-1\img\logo4.webp"></a>
 
-        <!--Navbar, button to other pages-->
-
-        <button data-collapse-toggle="navbar-default" type="button"
-          class="mb-2 inline-flex items-center p-2 me-2 w-10 h-10 justify-center text-sm text-gray-700 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15" />
-          </svg>
-        </button>
-
-        <div
-          class="hidden w-full md:block md:w-auto container mx-auto flex flex-col items-center pb-3 ps-3 pe-3"
-          id="navbar-default">
-
-          <nav
-            class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-
-            <button onclick=" window.location.href='index.html';"
-              class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">HOME
-            </button>
-
-            <button onclick=" window.location.href='about.html';"
-              class="mr-5 inline-flex items-center border-0 py-1 px-3 bg-teal-200 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">ABOUT
-            </button>
-
-            <button onclick="window.location.href='research.html';"
-              class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">RESEARCH
-            </button>
-
-            <button onclick="window.location.href='product.html';"
-              class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">PRODUCTS
-            </button>
-
-            <button onclick="window.location.href='team.html';"
-              class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full">TEAM
-            </button>
-
-            <button onclick=" window.location.href='contact.html' ;"
-              class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">CONTACT
-            </button>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <!--About title section-->
-    <section>
-      <div class="bg-image bg-cover bg-center w-full">
-
-        <div
-          class="container md:pt-20 md:px-20 p-10 mx-auto max-w-full md:my-0 2xl:my-20">
-          <div class="flex w-full mb-5 px-8 flex-wrap">
-            <h1
-              class="text-5xl md:text-6xl font-bold title-font text-teal-500 lg:w-1/2 lg:mb-0 mb-4">About
-              Us
-            </h1>
-          </div>
-          <div class="flex w-full mb-5 px-8 flex-wrap">
-            <div class="h-1 w-40 bg-teal-500 px-8 flex-wrap rounded-full"
-              data-aos="fade-right" data-aos-duration="1500">
+                </a> <img alt="logo5" class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
+                    src="page-1\img\Azadi Ka amrit mahatosav.webp"></a>
             </div>
-          </div>
-          <div class="text-black">
-            <h1
-              class="ml-3 mt-5 sm:text-3xl text-2xl font-medium title-font font-sans mb-4 text-black-900">
-              <div data-aos="fade-right" data-aos-duration="2000">
-                Navigating Practical Solutions via Multidisciplinary Mastery
-                <br> Across Diverse Domains With Pioneering Innovation in
-                Environmental
-                Sciences.
-              </div>
-            </h1>
-          </div>
+
+
+            <!--Navbar, button to other pages-->
+
+            <button data-collapse-toggle="navbar-default" type="button" class="mb-2 inline-flex items-center p-2 me-2 w-10 h-10 justify-center text-sm text-gray-700 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+
+            <div class="hidden w-full md:block md:w-auto container mx-auto flex flex-col items-center pb-3 ps-3 pe-3" id="navbar-default">
+
+                <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+    
+                    <button onclick=" window.location.href='index.html';"
+                        class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">HOME
+                    </button>
+    
+                    <button onclick=" window.location.href='about.html';"
+                        class="mr-5 inline-flex items-center border-0 py-1 px-3 bg-teal-200 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">ABOUT
+                    </button>
+    
+                    <button onclick="window.location.href='research.html';"
+                        class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">RESEARCH
+                    </button>
+    
+                    <button onclick="window.location.href='product.html';"
+                        class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">PRODUCTS
+                    </button>
+    
+                    <button onclick="window.location.href='team.html';"
+                        class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full">TEAM
+                    </button>
+    
+                    <button onclick=" window.location.href='contact.html' ;"
+                        class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">CONTACT
+                    </button>
+                </nav>
+            </div>
         </div>
+    </header>
+    
 
+<!--About title section-->
+  <section>
+    <div class="bg-image bg-cover bg-center w-full" >
+
+      <div class="container md:pt-20 md:px-20 p-10 mx-auto max-w-full md:my-0 2xl:my-20">
+        <div class="flex w-full mb-5 px-8 flex-wrap">
+          <h1 class="text-5xl md:text-6xl font-bold title-font text-teal-500 lg:w-1/2 lg:mb-0 mb-4">About Us
+          </h1>
+        </div>
+        <div class="flex w-full mb-5 px-8 flex-wrap">
+          <div class="h-1 w-40 bg-teal-500 px-8 flex-wrap rounded-full" data-aos="fade-right" data-aos-duration="1500"></div>
+        </div>
+        <div class="px-8 text-black">
+          <h1 class="sm:text-4xl text-2xl title-font lg:w-2/3 lg:mb-0 mb-4 typing-demo">
+            <div data-aos="fade-right" data-aos-duration="2000">
+              Navigating Practical
+              Solutions
+            </div>
+            <div data-aos="fade-right" data-aos-duration="2500">
+              Via Multidisciplinary Mastery Across Diverse Domains 
+            </div>
+            <div data-aos="fade-right" data-aos-duration="3000">
+              With Pioneering Innovation in Environmental
+            Sciences.
+            </div>
+          </h1>
+        </div>
       </div>
-    </section>
 
-    <!--Who we are section-->
-    <section class="body-font" data-aos="fade-up">
+    </div>
+  </section>
+  
+  <!--Who we are section-->
+  <section class="body-font" data-aos="fade-up">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-3/4 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded shadow-md" alt="hero-navmarg" src="page-2/about-navmarg.webp">
+      </div>
       <div
-        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div class="lg:max-w-lg lg:w-full md:w-3/4 w-5/6 mb-10 md:mb-0">
-          <img class="object-cover object-center rounded shadow-md"
-            alt="hero-navmarg" src="page-2/about-navmarg.webp">
+        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class=" text-4xl text-teal-500 tracking-widest font-bold title-font mb-4">WHO WE ARE
+        </h1>
+        <div data-aos="fade-up">
+          <p class="leading-relaxed text-left">We are group of young researchers having an extensive background in
+            multidisciplinary branches of sciences and applied engineering along with a research expertise of five
+            years. We started this venture to perform as institutional mechanism for
+            industry and academia collaboration on
+            research and to work as an Innovation Development Company.
+            Navmarg Research and Innovations Pvt Ltd is
+            pioneering water management solutions. We empower government agencies, CSR initiatives, and private R&D
+            teams
+            with our innovative and comprehensive solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<hr>
+
+<!--Mission & Values section-->
+  <section class="body-font">
+    <div class="container px-5 py-20 mx-auto">
+
+      <div class="text-center mb-20">
+        <h1 class="text-4xl text-teal-500 tracking-widest font-bold title-font mb-4">OUR MISSION & VALUES</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500" data-aos="fade-up">We aspire to
+          ensure universal
+          access to safe and clean water through effective, sustainable, and affordable solutions in water and
+          environmental sciences.
+        </p>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+        </div>
+      </div>
+
+      <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
+        data-aos="zoom-in-left">
+        <div
+        class="md:text-9xl text-5xl mr-10 inline-flex items-center justify-center flex-shrink-0 text-green-500 p-5">
+        <i class="fa-solid fa-seedling"></i>
+       </div>
+        <div class="flex-grow text-left mt-6 sm:mt-0">
+          <h2 class="text-gray-900 text-xl title-font font-medium mb-2">Environmental Treatment Techniques</h2>
+          <p class="leading-relaxed text-left text-base">Transforming environmental treatment, Navmarg R&I excels in
+            pioneering
+            solutions. Our Magnetic Arsenic Removal Unit (MARU), driven by patented Molecular Magnetic Treatment
+            Technology, exemplifies our commitment. From cutting-edge arsenic removal to comprehensive water management
+            and smart maintenance solutions, we redefine industry standards. Partner with us for unparalleled expertise
+            in environmental treatment techniques.</p>
+        </div>
+      </div>
+
+
+      <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
+        data-aos="zoom-in-right">
+        <div class="flex-grow text-left mt-6 sm:mt-0">
+          <h2 class="text-gray-900 text-xl title-font font-medium mb-2">Digital Sensor Development</h2>
+          <p class="leading-relaxed text-base">Leading the charge in innovation, Navmarg R&I spearheads Digital Sensor
+            Development for Pipeline Schemes, targeting iron, arsenic, and pathogens. Our pioneering Multiparameter
+            Quality Devices, IoT-based, extend beyond, covering societies, university campuses, and large areas,
+            ensuring transparency and awareness of water quality. Embrace the scope of cutting-edge technology with us.
+          </p>
         </div>
         <div
         class="md:text-9xl text-5xl mr-10 inline-flex  sm:order-none order-first items-center justify-center flex-shrink-0 text-green-500 p-5">
@@ -212,22 +282,9 @@
     </div>
   </section>
 
-    <hr>
+<hr>
 
 <!--Our Associations section-->
-  <!--<section class="body-font">
-    <div class="container mx-auto flex px-5 py-12 items-center justify-center flex-col">
-      <div class="text-center lg:w-2/3 w-full">
-        <h1 class="text-4xl text-teal-500 tracking-widest font-bold title-font mt-8" data-aos="fade-up">OUR
-          ASSOCIATIONS</h1>
-      </div>
-      <div class="md:p-2 p-1 w-full" data-aos="fade-up">
-        <img alt="gallery" class="w-full h-full object-cover object-center block bg-white rounded-lg p-10"
-          src="page-2/Associatiosn for WEB.webp">
-      </div>
-    </div>
-  </section>-->
-
   <section class="body-font">
     <div class="container mx-auto flex px-5 pt-8 items-center justify-center flex-col">
       <div class="text-center lg:w-2/3 w-full">
@@ -235,10 +292,7 @@
           ASSOCIATIONS</h1>
       </div>
     </div>
-  </section>
-
   
-
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 m-5 md:mb-20 md:mt-10 md:ms-20">
         <div data-aos="fade-right" data-aos-duration="2000">
           <img class="hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105" src="page-2/Kilkari.webp" alt="">
@@ -433,649 +487,173 @@
         <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
           <h1 class="sm:w-2/5 sm:text-4xl text-2xl text-teal-500 tracking-widest font-bold title-font mb-4 sm:mb-0"
             data-aos="fade-up">RECENT AWARDS AND RECOGNITION
-          class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-          <h1
-            class=" text-4xl text-teal-500 tracking-widest font-bold title-font mb-4">WHO
-            WE ARE
           </h1>
-          <div data-aos="fade-up">
-            <p class="leading-relaxed text-left">We are group of young
-              researchers having an extensive background in
-              multidisciplinary branches of sciences and applied engineering
-              along with a research expertise of five
-              years. We started this venture to perform as institutional
-              mechanism for industry and academia collaboration on research and
-              to work as an Innovation Development Company.
-              Navmarg Research and Innovations Pvt Ltd is pioneering water
-              management solutions. We empower government agencies, CSR
-              initiatives, and private R&D
-              teams with our innovative and comprehensive solutions.</p>
-          </div>
         </div>
       </div>
-    </section>
 
-    <hr>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
 
-    <!--Mission & Values section-->
-    <section class="body-font">
-      <div class="container px-5 py-20 mx-auto">
-
-        <div class="text-center mb-20">
-          <h1
-            class="text-4xl text-teal-500 tracking-widest font-bold title-font mb-4">OUR
-            MISSION & VALUES</h1>
-          <p
-            class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500"
-            data-aos="fade-up">We aspire to
-            ensure universal
-            access to safe and clean water through effective, sustainable, and
-            affordable solutions in water and
-            environmental sciences.
-          </p>
-          <div class="flex mt-6 justify-center">
-            <div class="w-16 h-1 rounded-full bg-green-500 inline-flex"></div>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="fade-right">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full"
+              src="page-2/DPIIT India Certificate Web.webp">
           </div>
+          <h2 class="text-xl font-medium title-font text-green-600 mt-5">Startup India</h2>
+          <p class="text-base leading-relaxed mt-2">Navmarg R&I got recognised by Startup India (DIPP 152553).</p>
         </div>
 
-        <div
-          class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
-          data-aos="zoom-in-left">
-          <div
-            class="md:text-9xl text-5xl mr-10 inline-flex items-center justify-center flex-shrink-0 text-green-500 p-5">
-            <i class="fa-solid fa-seedling"></i>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="fade-up">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="page-2\startup-bihar-65ae7cd91ae26.webp">
           </div>
-          <div class="flex-grow text-left mt-6 sm:mt-0">
-            <h2
-              class="text-gray-900 text-xl title-font font-medium mb-2">Environmental
-              Treatment Techniques</h2>
-            <p class="leading-relaxed text-left text-base">Transforming
-              environmental treatment, Navmarg R&I excels in
-              pioneering solutions. Our Magnetic Arsenic Removal Unit (MARU),
-              driven by patented Molecular Magnetic Treatment
-              Technology, exemplifies our commitment. From cutting-edge arsenic
-              removal to comprehensive water management
-              and smart maintenance solutions, we redefine industry standards.
-              Partner with us for unparalleled expertise
-              in environmental treatment techniques.</p>
-          </div>
+          <h2 class="text-xl font-medium title-font text-green-600 mt-5">Startup Bihar</h2>
+          <p class="text-base leading-relaxed mt-2">Startup Bihar sanctioned Seed Funding of Rs. 10 Lakhs to Navmarg
+            R&I.</p>
         </div>
 
-        <div
-          class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
-          data-aos="zoom-in-right">
-          <div class="flex-grow text-left mt-6 sm:mt-0">
-            <h2
-              class="text-gray-900 text-xl title-font font-medium mb-2">Digital
-              Sensor Development</h2>
-            <p class="leading-relaxed text-base">Leading the charge in
-              innovation, Navmarg R&I spearheads Digital Sensor
-              Development for Pipeline Schemes, targeting iron, arsenic, and
-              pathogens. Our pioneering Multiparameter
-              Quality Devices, IoT-based, extend beyond, covering societies,
-              university campuses, and large areas,
-              ensuring transparency and awareness of water quality. Embrace the
-              scope of cutting-edge technology with us.
-            </p>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="flip-right">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="page-2/NAsscom Web.webp">
           </div>
-          <div
-            class="md:text-9xl text-5xl mr-10 inline-flex  sm:order-none order-first items-center justify-center flex-shrink-0 text-green-500 p-5">
-            <i class="fa-solid fa fa-cogs"></i>
-          </div>
+          <h2 class="text-xl font-medium title-font text-green-600 mt-5">Nasscom NextGen Innovator</h2>
+          <p class="text-base leading-relaxed mt-2">Nasscom NextGen Innovator: A venture launched in 2023, is dedicated
+            to tackling water challenges.</p>
         </div>
 
-        <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col"
-          data-aos="zoom-in-left">
-          <div
-            class="md:text-9xl text-5xl mr-10 inline-flex items-center justify-center flex-shrink-0 text-green-500 p-5">
-            <i class="fa-solid fa-flask"></i>
+        <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="fade-right">
+          <div class="rounded-lg h-64 overflow-hidden">
+            <img alt="content" class="object-cover object-center h-full w-full" src="page-2/BIC WEB.webp">
           </div>
-          <div class="flex-grow text-left mt-6 sm:mt-0">
-            <h2
-              class="text-gray-900 text-xl title-font font-medium mb-2">Applied
-              Sciences</h2>
-            <p class="leading-relaxed text-base">At Navmarg R&I, we excel in
-              Applied Sciences Domains—Geosciences,
-              Chemical Studies, and Applied Engineering. Our expertise spans
-              Chemical Analysis, Sophisticated
-              Instrumentation, and Utilization Studies in water. From
-              Engineering Design to Dynamics, Lab to Fabrication,
-              and Pilots to Commercialization, we're pioneering future scopes in
-              advanced water quality mapping, using
-              Geosciences and Data Informatics for sustained excellence.</p>
-          </div>
+          <h2 class="text-xl font-medium title-font text-green-600 mt-5">Bihar Innovation Challenge, 2023</h2>
+          <p class="text-base leading-relaxed mt-2">Finalist at Bihar Innovation Challenge- 2023</p>
         </div>
 
       </div>
-    </section>
+    </div>
+  </section>
 
-    <hr>
+  <hr>
 
-    <!--Associations Section-->
-    <section class="body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="text-center">
-          <h1
-            class="text-4xl text-teal-500 tracking-widest font-bold title-font mb-10"
-            data-aos="fade-up">OUR
-            ASSOCIATIONS</h1>
+  <!--News Articles section-->
+  <section class="text-white body-font bg-teal-500">
+    <div class="container px-5 py-24 mb-10  mx-auto flex flex-wrap">
+      <div class="flex flex-wrap w-full">
+
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-4xl text-2xl text-white tracking-widest font-bold title-font mb-4" data-aos="fade-up">
+            NEWS ARTICLES</h1>
+          <div class="h-1 w-20 bg-white rounded" data-aos="fade-right" data-aos-duration="1500"> </div>
         </div>
-        <div class="flex flex-wrap -m-4 " data-aos="fade-right"
-          data-aos-duration="2000">
-          <div
-            class="p-4 w-1/3 sm:w-1/3 lg:w-1/4 hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105">
-            <div class="h-48 rounded overflow-hidden p-2">
-              <img alt="Associations"
-                class="object-contain object-center w-full h-full"
-                src="page-2/Kilkari.webp">
+        <p class="lg:w-1/2 w-full leading-relaxed text-white mb-10" data-aos="flip-left">Recent Media Coverages.
+        </p>
+
+        <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+
+          <div class="flex relative pb-12" data-aos="fade-up">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
+              <svg fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-xl text-white mb-1 tracking-wider">The Times of India</h2>
+              <p class="leading-relaxed"> <!-- Write something in one line-->.<br> <i>Dec 17, 2023, Karnataka</i></p>
             </div>
           </div>
 
-          <div
-            class="p-4 w-1/3 sm:w-1/3 lg:w-1/4 hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105">
-            <div class="h-48 rounded overflow-hidden p-2">
-              <img alt="Associations"
-                class="object-contain object-center w-full h-full"
-                src="page-2/Sarkar.webp">
+
+          <div class="flex relative pb-12" data-aos="fade-up">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
+              <svg fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-xl text-white mb-1 tracking-wider">Dainik Bhaskar</h2>
+              <p class="leading-relaxed"><!-- Write something in one line-->.</p>
+              <br> <i>Dec 15, 2023, Bihar</i></p>
             </div>
           </div>
 
-          <div
-            class="p-4 w-1/3 sm:w-1/3 lg:w-1/4 hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105">
-            <div class="h-48 rounded overflow-hidden p-2">
-              <img alt="Associations"
-                class="object-contain object-center w-full h-full"
-                src="page-2/Sarkar Lok.webp">
+
+          <div class="flex relative pb-12" data-aos="fade-up">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center"> 
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
+              <svg fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-xl text-white mb-1 tracking-wider"> <!--Newspaper Title/name-->City Bhaskar </h2>
+              <p class="leading-relaxed"><!--Write about news in one line-->. <br> <i>Jul 12, 2023, Bihar</i></p>
             </div>
           </div>
 
-          <div
-            class="p-4 w-1/3 sm:w-1/3 lg:w-1/4 hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105">
-            <div class="h-48 rounded overflow-hidden p-2">
-              <img alt="Associations"
-                class="object-contain object-center w-full h-full"
-                src="page-2/IIT Patna.webp">
+
+          <div class="flex relative pb-12" data-aos="fade-up">
+            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+            </div>
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
+              <svg fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-xl text-white mb-1 tracking-wider">Hindustan</h2>
+              <p class="leading-relaxed"><!--Write about news in one line-->. <br> <i>Jul 29, 2023, Bihar</i></p>
             </div>
           </div>
 
-          <div
-            class="p-4 w-1/3 sm:w-1/3 lg:w-1/4 hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105">
-            <div class="h-48 rounded overflow-hidden p-2">
-              <img alt="Associations"
-                class="object-contain object-center w-full h-full"
-                src="page-2/Mahavir.webp">
+
+          <div class="flex relative" data-aos="fade-up">
+            <div
+              class="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
+              <svg fill="none" stroke="green" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="flex-grow pl-4">
+              <h2 class="font-medium title-font text-xl text-white mb-1 tracking-wider"> News Articles </h2>
+              <p class="leading-relaxed"><!--Write about news in one line--><br> <i>x, 20xx</i></p>
             </div>
           </div>
 
-          <div
-            class="p-4 w-1/3 sm:w-1/3 lg:w-1/4 hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105">
-            <div class="h-48 rounded overflow-hidden p-2">
-              <img alt="Associations"
-                class="object-contain object-center w-full h-full"
-                src="page-2/CSIR.webp">
-            </div>
-          </div>
-
-          <div
-            class="p-4 w-1/3 sm:w-1/3 lg:w-1/4 hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105">
-            <div class="h-48 rounded overflow-hidden p-2">
-              <img alt="Associations"
-                class="object-contain object-center w-full h-full"
-                src="page-2/Startup.webp">
-            </div>
-          </div>
-
-          <div
-            class="p-4 w-1/3 sm:w-1/3 lg:w-1/4 hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105">
-            <div class="h-48 rounded overflow-hidden p-2">
-              <img alt="Associations"
-                class="object-contain object-center w-full h-full"
-                src="page-2/Mahe.webp">
-            </div>
-          </div>
-
-          <div
-            class="p-4 w-1/3 sm:w-1/3 lg:w-1/4 hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105">
-            <div class="h-48 rounded overflow-hidden p-2">
-              <img alt="Associations"
-                class="object-contain object-center w-full h-full"
-                src="page-2/Unicef.webp">
-            </div>
-          </div>
-
-          <div
-            class="p-4 w-1/3 sm:w-1/3 lg:w-1/4 hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105">
-            <div class="h-48 rounded overflow-hidden p-2">
-              <img alt="Associations"
-                class="object-contain object-center w-full h-full"
-                src="page-2/ICICI.webp">
-            </div>
-          </div>
-
-          <div
-            class="p-4 w-1/3 sm:w-1/3 lg:w-1/4 hover:shadow-lg hover:shadow-gray-300 h-auto max-w-full md:max-w-xs rounded-xl relative z-0 transition-all duration-300 hover:scale-105">
-            <div class="h-48 rounded overflow-hidden p-2">
-              <img alt="Associations"
-                class="object-contain object-center w-full h-full"
-                src="page-2/Government.webp">
-            </div>
-          </div>
 
         </div>
+        <img id="sliderImage"
+          class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 mySlides w3-animate-right" src=""
+          alt="news">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <hr>
+  <hr>
 
-    <!--Testimonials section-->
-
-    <section>
-      <div class="container px-6 py-12 mx-auto">
-        <div class="grid items-center gap-5 xl:grid-cols-5">
-          <div class="max-w-2xl my-8 text-center xl:col-span-2 xl:text-left">
-            <h1
-              class="text-4xl font-bold text-teal-500 tracking-widest font-bold mb-7">TESTIMONIALS</h1>
-            <p>Here's what people have said about us, their words are a
-              testament to the impact we've had and the experiences we've
-              created.</p>
-          </div>
-
-          <div class="p-2 xl:col-span-3">
-            <div class="grid gap-4 md:grid-cols-2">
-
-              <div class="grid content-center gap-4">
-
-                <div
-                  class="p-6 rounded shadow-md transition-all duration-300 hover:shadow-lg hover:shadow-gray-300 hover:scale-105">
-                  <small><p class="font-bold">At Bihar Bal Bhawan Kilkari, our
-                      mission is to nurture innovation,
-                      creativity, and a scientific mindset in every child. We
-                      encourage them to sharpen their observational and
-                      analytical skills to address real-world issues, fostering
-                      both personal growth and social betterment. A
-                      prime example of this is the Arsenic project, where our
-                      young researchers have dedicated five years of
-                      diligent work. Their efforts have led to significant
-                      achievements: comprehensive research, the development
-                      of an arsenic filter, a patented technology, and the
-                      honing of valuable skills. Notably, our technology
-                      requires minimal maintenance, no consumables or chemicals,
-                      resulting in remarkably low ongoing costs.</p></small>
-                  <div class="flex items-center mt-4 space-x-4">
-                    <img src="page-2/jyoti parihar.webp" alt
-                      class="w-24 h-24 bg-center bg-cover rounded-full">
-                    <div>
-                      <p class="text-lg font-semibold">Jyoti Parihar</p>
-                      <p class="text-sm">Director, Bihar Bal Bhawan Kilkari,
-                        Department of Education,
-                        Government of Bihar</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="p-6 rounded shadow-md transition-all duration-300 hover:shadow-lg hover:shadow-gray-300 hover:scale-105">
-                  <small><p class="font-bold">Researchers have concluded from
-                      this project that arsenic can be removed
-                      from water by engineering over its magnetic properties.
-                      Researchers have designed and tested various
-                      shapes like 'spherical,' 'cylindrical,' and 'conical.' The
-                      current design successfully removes 165 PPB of
-                      Arsenic to Below Detection Limits (BDL). I'm very
-                      confident in the success of this project, not only for
-                      mitigating the problem of Arsenic in governmental
-                      projects, but it is also worthy of international
-                      recognition and implementation. They'll be able to bring
-                      forth a good name for the state of Bihar.</p></small>
-                  <div class="flex items-center mt-4 space-x-4">
-                    <img src="page-2/IAS Sanjeev Kumar.webp" alt
-                      class="w-24 h-24 bg-center bg-cover rounded-full">
-                    <div>
-                      <p class="text-lg font-semibold">Sanjeev Kumar, IAS</p>
-                      <p class="text-sm dark:text-gray-600">Director, Science
-                        and Technology, Government of Bihar</p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="grid content-center gap-4">
-
-                <div
-                  class="p-6 rounded shadow-md transition-all duration-300 hover:shadow-lg hover:shadow-gray-300 hover:scale-105">
-                  <small><p class="font-bold">As Chief Scientist at CSIR-Indian
-                      Institute of Chemical Technology,
-                      Hyderabad, I've witnessed Kilkari R&D team's remarkable
-                      dedication and passion in water sciences. Their
-                      innovative low-cost arsenic removal device, employing
-                      multimedia filtration and magnetic separation with
-                      Neodymium iron boron magnets, stands as a testament to
-                      their multidisciplinary approach and commitment to
-                      societal welfare.</p></small>
-                  <div class="flex items-center mt-4 space-x-4">
-                    <img src="page-2\sridhar-sir-website-65ae7cd6b9712.webp" alt
-                      class="w-24 h-24 bg-center bg-cover rounded-full">
-                    <div>
-                      <p class="text-lg font-semibold">Dr. Sundargopal
-                        Sridhar</p>
-                      <p class="text-sm dark:text-gray-600">Chief Scientist,
-                        CSIR-IICT Hyderabad</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="p-6 rounded shadow-md transition-all duration-300 hover:shadow-lg hover:shadow-gray-300 hover:scale-105">
-                  <small><p class="font-bold">Kilkari entrusted me to supervise
-                      young researchers in developing an
-                      arsenic elimination technology using magnetic fields.
-                      Their groundbreaking work effectively removed 99% of
-                      arsenic from groundwater. I wholeheartedly supported these
-                      young minds in their quest. Arsenic is a grave
-                      threat, particularly in the north and east, where
-                      vulnerable populations lack access to clean water,
-                      leading to life-threatening diseases. It's heartening to
-                      witness their creation of an affordable,
-                      effective solution that can potentially save lives across
-                      the nation.</p></small>
-                  <div class="flex items-center mt-4 space-x-4">
-                    <img src="page-2\prolay-das-65ae7cd78044f.webp" alt
-                      class="w-24 h-24 bg-center bg-cover rounded-full">
-                    <div>
-                      <p class="text-lg font-semibold">Dr. Prolay Das</p>
-                      <p class="text-sm dark:text-gray-600">Professor, Dept. of
-                        Chemistry, IIT Patna</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <hr>
-
-    <!--Photo gallery & Press Coverage section-->
-    <section class="mb-10 body-font">
-      <div class="container px-5 py-24 mx-auto flex flex-wrap">
-        <div class="flex w-full mb-20 flex-wrap">
-          <h1
-            class="sm:text-4xl text-2xl text-teal-500 tracking-widest font-bold title-font mb-4 lg:w-1/3 lg:mb-0 mb-4"
-            data-aos="fade-up">PHOTO GALLERY &
-            PRESS COVERAGE</h1>
-        </div>
-
-        <div class="flex flex-wrap md:-m-2 -m-1">
-
-          <div class="flex flex-wrap w-1/2" data-aos="fade-right">
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery"
-                class="w-full object-cover h-full object-center block"
-                src="page-2\Trial Gallery 1.webp">
-            </div>
-            <div class="md:p-2 p-1 w-1/2" data-aos="fade-right">
-              <img alt="gallery"
-                class="w-full object-cover h-full object-center block"
-                src="page-2\trial gallery 4.webp">
-            </div>
-            <div class="md:p-2 p-1 w-full" data-aos="fade-right"
-              data-aos-duration="1000">
-              <img alt="gallery"
-                class="w-full h-full object-cover object-center block"
-                src="page-2\Gallery Trial 5.webp">
-            </div>
-          </div>
-
-          <div class="flex flex-wrap w-1/2">
-            <div class="md:p-2 p-1 w-full">
-              <img alt="gallery"
-                class="w-full h-full object-cover object-center block"
-                src="page-2\gallery-trial-6-65ae7ce1e0a41.webp"
-                data-aos="fade-up">
-            </div>
-            <div class="md:p-2 p-1 w-1/2">
-              <img alt="gallery"
-                class="w-full object-cover h-full object-center block"
-                src="page-2\gallery trial 9.webp"
-                data-aos="fade-up">
-            </div>
-            <div class="md:p-2 p-1 w-1/2" data-aos="fade-up"
-              data-aos-duration="1500">
-              <img alt="gallery"
-                class="w-full object-cover h-full object-center block"
-                src="page-2\trial gallery 8.webp">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Recent awards & Recognition section-->
-    <section class="body-font mb-10">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col">
-          <div class="h-1 bg-gray-200 rounded overflow-hidden">
-            <div class="w-24 h-full bg-blue-400"></div>
-          </div>
-          <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-            <h1
-              class="sm:w-2/5 sm:text-4xl text-2xl text-teal-500 tracking-widest font-bold title-font mb-4 sm:mb-0"
-              data-aos="fade-up">RECENT AWARDS AND RECOGNITION
-            </h1>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-
-          <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="fade-right">
-            <div class="rounded-lg h-64 overflow-hidden">
-              <img alt="content"
-                class="object-cover object-center h-full w-full"
-                src="page-2/DPIIT India Certificate Web.webp">
-            </div>
-            <h2
-              class="text-xl font-medium title-font text-green-600 mt-5">Startup
-              India</h2>
-            <p class="text-base leading-relaxed mt-2"> Navmarg R&I got
-              recognised by Startup India (DIPP 152553).</p>
-          </div>
-
-          <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="fade-up">
-            <div class="rounded-lg h-64 overflow-hidden">
-              <img alt="content"
-                class="object-cover object-center h-full w-full"
-                src="page-2\startup-bihar-65ae7cd91ae26.webp">
-            </div>
-            <h2
-              class="text-xl font-medium title-font text-green-600 mt-5">Startup
-              Bihar</h2>
-            <p class="text-base leading-relaxed mt-2">Startup Bihar sanctioned
-              Seed Funding of Rs. 10 Lakhs to Navmarg
-              R&I.</p>
-          </div>
-
-          <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="flip-right">
-            <div class="rounded-lg h-64 overflow-hidden">
-              <img alt="content"
-                class="object-cover object-center h-full w-full"
-                src="page-2/NAsscom Web.webp">
-            </div>
-            <h2
-              class="text-xl font-medium title-font text-green-600 mt-5">Nasscom
-              NextGen Innovator</h2>
-            <p class="text-base leading-relaxed mt-2">Nasscom NextGen Innovator:
-              A venture launched in 2023, is dedicated
-              to tackling water challenges.</p>
-          </div>
-
-          <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="fade-right">
-            <div class="rounded-lg h-64 overflow-hidden">
-              <img alt="content"
-                class="object-cover object-center h-full w-full"
-                src="page-2/BIC WEB.webp">
-            </div>
-            <h2 class="text-xl font-medium title-font text-green-600 mt-5">Bihar
-              Innovation Challenge, 2023</h2>
-            <p class="text-base leading-relaxed mt-2">Finalist at Bihar
-              Innovation Challenge- 2023</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <hr>
-
-    <!--News Articles section-->
-    <section class="text-white body-font bg-teal-500">
-      <div class="container px-5 py-24 mb-10  mx-auto flex flex-wrap">
-        <div class="flex flex-wrap w-full">
-
-          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1
-              class="sm:text-4xl text-2xl text-white tracking-widest font-bold title-font mb-4"
-              data-aos="fade-up">
-              NEWS ARTICLES</h1>
-            <div class="h-1 w-20 bg-white rounded" data-aos="fade-right"
-              data-aos-duration="1500"> </div>
-          </div>
-          <p class="lg:w-1/2 w-full leading-relaxed text-white mb-10"
-            data-aos="flip-left">Recent Media Coverages.
-          </p>
-
-          <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-
-            <div class="flex relative pb-12" data-aos="fade-up">
-              <div
-                class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div
-                class="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
-                <svg fill="none" stroke="green" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="2"
-                  class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="font-medium title-font text-xl text-white mb-1 tracking-wider">The
-                  Times of India</h2>
-                <p class="leading-relaxed">
-                  <!-- Write something in one line-->.<br> <i>Dec 17, 2023,
-                    Karnataka</i></p>
-              </div>
-            </div>
-
-            <div class="flex relative pb-12" data-aos="fade-up">
-              <div
-                class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div
-                class="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
-                <svg fill="none" stroke="green" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="2"
-                  class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="font-medium title-font text-xl text-white mb-1 tracking-wider">Dainik
-                  Bhaskar</h2>
-                <p
-                  class="leading-relaxed"><!-- Write something in one line-->.</p>
-                <br> <p><i>Dec 15, 2023, Bihar</i></p>
-              </div>
-            </div>
-
-            <div class="flex relative pb-12" data-aos="fade-up">
-              <div
-                class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div
-                class="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
-                <svg fill="none" stroke="green" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="2"
-                  class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="font-medium title-font text-xl text-white mb-1 tracking-wider">
-                  <!--Newspaper Title/name-->City
-                  Bhaskar </h2>
-                <p class="leading-relaxed"><!--Write about news in one line-->.
-                  <br> <i>Jul 12, 2023, Bihar</i></p>
-              </div>
-            </div>
-
-            <div class="flex relative pb-12" data-aos="fade-up">
-              <div
-                class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div
-                class="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
-                <svg fill="none" stroke="green" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="2"
-                  class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="font-medium title-font text-xl text-white mb-1 tracking-wider">Hindustan</h2>
-                <p class="leading-relaxed"><!--Write about news in one line-->.
-                  <br> <i>Jul 29, 2023, Bihar</i></p>
-              </div>
-            </div>
-
-            <div class="flex relative" data-aos="fade-up">
-              <div
-                class="flex-shrink-0 w-10 h-10 rounded-full bg-white inline-flex items-center justify-center text-white relative z-10">
-                <svg fill="none" stroke="green" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="2"
-                  class="w-5 h-5" viewBox="0 0 24 24">
-                  <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="font-medium title-font text-xl text-white mb-1 tracking-wider">
-                  News Articles </h2>
-                <p
-                  class="leading-relaxed"><!--Write about news in one line--><br>
-                  <i>x, 20xx</i></p>
-              </div>
-            </div>
-
-          </div>
-          <img id="sliderImage"
-            class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12 mySlides w3-animate-right"
-            src
-            alt="news">
-        </div>
-      </div>
-    </section>
-
-    <hr>
-
-    <!--Script for news articles-->
-    <script>
+<!--Script for news articles-->
+  <script>
     // Array of image paths
     var imagePaths = [
       'page-2/press-web-65ae7cff9f118.webp',
@@ -1122,247 +700,205 @@
     changeImage();
   </script>
 
-    <!--Report & Resources section-->
-    <section class=" body-font mb-40">
-      <div class="container px-5 py-24 mx-auto">
+<!--Report & Resources section-->
+  <section class=" body-font mb-40">
+    <div class="container px-5 py-24 mx-auto">
 
-        <h1
-          class="sm:text-4xl text-2xl text-teal-500 tracking-widest font-bold title-font mb-10"
-          data-aos="fade-up">
-          REPORT & RESOURCES
-        </h1>
-        <div class="h-1 bg-gray-200 rounded overflow-hidden mb-20"
-          data-aos="fade-right">
-          <div class="w-48 h-full bg-blue-400"></div>
-        </div>
-        <div class="flex flex-wrap -mx-4 -my-8" data-aos="fade-up">
-
-          <div class="py-8 px-4 lg:w-1/3">
-            <div class="h-full flex items-start">
-              <div
-                class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-                <span
-                  class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Mar</span>
-                <span
-                  class="font-medium text-lg text-gray-800 title-font leading-none">2024</span>
-              </div>
-              <div class="flex-grow pl-6">
-                <h1
-                  class="title-font text-xl font-medium text-gray-900 mb-3">Annual
-                  Report</h1>
-                <p class="leading-relaxed mb-5"><!-- Write about it here--></p>
-                <a class="inline-flex items-center text-blue-500"> View
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="2"
-                    class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="py-8 px-4 lg:w-1/3">
-            <div class="h-full flex items-start">
-              <div
-                class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-                <span
-                  class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Mar</span>
-                <span
-                  class="font-medium text-lg text-gray-800 title-font leading-none">2024</span>
-              </div>
-              <div class="flex-grow pl-6">
-                <h1
-                  class="title-font text-xl font-medium text-gray-900 mb-3">CSR</h1>
-                <p class="leading-relaxed mb-5"><!-- Write about it here--></p>
-                <a class="inline-flex items-center text-blue-500">View
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="2"
-                    class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="py-8 px-4 lg:w-1/3">
-            <div class="h-full flex items-start">
-              <div
-                class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-                <span
-                  class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Mar</span>
-                <span
-                  class="font-medium text-lg text-gray-800 title-font leading-none">2024</span>
-              </div>
-              <div class="flex-grow pl-6">
-                <h1
-                  class="title-font text-xl font-medium text-gray-900 mb-3">Brochures</h1>
-                <p class="leading-relaxed mb-5"><!-- Write about it here--></p>
-                <a class="inline-flex items-center text-blue-500"> View
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="2"
-                    class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="py-8 px-4 lg:w-1/3">
-            <div class="h-full flex items-start">
-              <div
-                class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
-                <span
-                  class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Mar</span>
-                <span
-                  class="font-medium text-lg text-gray-800 title-font leading-none">2024</span>
-              </div>
-              <div class="flex-grow pl-6">
-                <h1
-                  class="title-font text-xl font-medium text-gray-900 mb-3">Investors</h1>
-                <p class="leading-relaxed mb-5"><!-- Write about it here--></p>
-                <a class="inline-flex items-center text-blue-500"> View
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="2"
-                    class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
+      <h1 class="sm:text-4xl text-2xl text-teal-500 tracking-widest font-bold title-font mb-10" data-aos="fade-up">
+        REPORT & RESOURCES
+      </h1>
+      <div class="h-1 bg-gray-200 rounded overflow-hidden mb-20" data-aos="fade-right">
+        <div class="w-48 h-full bg-blue-400"></div>
       </div>
-    </section>
+      <div class="flex flex-wrap -mx-4 -my-8" data-aos="fade-up">
 
-    <!--Navigation with numbers-->
-    <nav class="flex justify-center mb-10">
-      <ul class="inline-flex -space-x-px text-base h-10">
-        <li>
-          <a href="index.html"
-            class="flex items-center justify-center px-4 h-10 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">Previous</a>
-        </li>
-        <li>
-          <a href="index.html"
-            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i
-              class="fa-solid fa-house"></i></a>
-        </li>
-        <li>
-          <a href="about.html"
-            class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700"><i
-              class="fa-solid fa-comment"></i></a>
-        </li>
-        <li>
-          <a href="research.html"
-            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i
-              class="fa-solid fa-book"></i></a>
-        </li>
-        <li>
-          <a href="product.html"
-            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i
-              class="fa-solid fa-box-open"></i></a>
-        </li>
-        <li>
-          <a href="team.html"
-            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i
-              class="fa-solid fa-people-group"></i></a>
-        </li>
-        <li>
-          <a href="contact.html"
-            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i
-              class="fa-solid fa-phone-volume"></i></a>
-        </li>
-        <li>
-          <a href="research.html"
-            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 ">Next</a>
-        </li>
-      </ul>
-    </nav>
 
-    <!--Footer section-->
-    <footer class="text-white body-font bg-teal-500 p-3">
-      <div class="mx-auto max-w-screen-xl">
-        <div
-          class="md:flex md:justify-between m-5 text-center justify-center items-center flex-row">
+        <div class="py-8 px-4 lg:w-1/3">
+          <div class="h-full flex items-start">
+            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+              <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Mar</span>
+              <span class="font-medium text-lg text-gray-800 title-font leading-none">2024</span>
+            </div>
+            <div class="flex-grow pl-6">
+              <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Annual Report</h1>
+              <p class="leading-relaxed mb-5"><!-- Write about it here--></p>
+              <a class="inline-flex items-center text-blue-500"> View
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="py-8 px-4 lg:w-1/3">
+          <div class="h-full flex items-start">
+            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+              <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Mar</span>
+              <span class="font-medium text-lg text-gray-800 title-font leading-none">2024</span>
+            </div>
+            <div class="flex-grow pl-6">
+              <h1 class="title-font text-xl font-medium text-gray-900 mb-3">CSR</h1>
+              <p class="leading-relaxed mb-5"><!-- Write about it here--></p>
+              <a class="inline-flex items-center text-blue-500">View
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-8 px-4 lg:w-1/3">
+          <div class="h-full flex items-start">
+            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+              <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Mar</span>
+              <span class="font-medium text-lg text-gray-800 title-font leading-none">2024</span>
+            </div>
+            <div class="flex-grow pl-6">
+              <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Brochures</h1>
+              <p class="leading-relaxed mb-5"><!-- Write about it here--></p>
+              <a class="inline-flex items-center text-blue-500"> View
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="py-8 px-4 lg:w-1/3">
+          <div class="h-full flex items-start">
+            <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
+              <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">Mar</span>
+              <span class="font-medium text-lg text-gray-800 title-font leading-none">2024</span>
+            </div>
+            <div class="flex-grow pl-6">
+              <h1 class="title-font text-xl font-medium text-gray-900 mb-3">Investors</h1>
+              <p class="leading-relaxed mb-5"><!-- Write about it here--></p>
+              <a class="inline-flex items-center text-blue-500"> View
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+<!--Navigation with numbers-->
+  <nav class="flex justify-center mb-10">
+    <ul class="inline-flex -space-x-px text-base h-10">
+      <li>
+        <a href="index.html"
+          class="flex items-center justify-center px-4 h-10 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">Previous</a>
+      </li>
+      <li>
+        <a href="index.html"
+          class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-house"></i></a>
+      </li>
+      <li>
+        <a href="about.html"
+          class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700"><i class="fa-solid fa-comment"></i></a>
+      </li>
+      <li>
+        <a href="research.html"
+          class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-book"></i></a>
+      </li>
+      <li>
+        <a href="product.html"
+          class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-box-open"></i></a>
+      </li>
+      <li>
+        <a href="team.html"
+          class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-people-group"></i></a>
+      </li>
+      <li>
+        <a href="contact.html"
+          class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-phone-volume"></i></a>
+      </li>
+      <li>
+        <a href="research.html"
+          class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 ">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+<!--Footer section-->
+<footer class="text-white body-font bg-teal-500 p-3">
+  <div class="mx-auto max-w-screen-xl">
+      <div class="md:flex md:justify-between m-5 text-center justify-center items-center flex-row">
           <div class="mb-6 md:mb-0 mt-6">
-            <a href="index.html" class="flex items-center">
-              <img alt="logo0"
-                class="w-24 h-24 object-cover object-center rounded-full inline-block items-center justify-center bg-white"
-                src="page-1\img\logo0.webp">
-              <span
-                class="self-center text-2xl font-medium title-font font-sans whitespace-nowrap dark:text-white ms-5 text-wrap">Navmarg
-                Research and Innovation</span>
-            </a>
+              <a href="index.html" class="flex items-center">
+                  <img alt="logo0"
+              class="w-24 h-24 object-cover object-center rounded-full inline-block items-center justify-center bg-white"
+              src="page-1\img\logo0.webp">
+                  <span class="self-center text-2xl font-medium title-font font-sans whitespace-nowrap dark:text-white ms-5 text-wrap">Navmarg Research and Innovation</span>
+              </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            <div>
-              <h2
-                class="mb-3 text-md font-semibold text-white uppercase">Contact
-                Us</h2>
-              <ul class="text-white">
-                <li class="mb-4">
-                  <a href="mailto:navmarg.pvt.ltd@gmail.com"
-                    class="hover:underline" target="_blank"><i
-                      class="fa-solid fa-envelope"></i> Email</a>
-                </li>
-                <li>
-                  <a href="tel:+917488404654" class="hover:underline"><i
-                      class="fa-solid fa-phone"></i> Phone</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 class="mb-4 text-md font-semibold text-white uppercase">Follow
-                Us</h2>
-              <ul class="text-white">
-                <li class="mb-4">
-                  <a
-                    href="https://www.linkedin.com/company/navmarg-research-and-innovation-private-limited/"
-                    class="hover:underline "><i
-                      class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/people/Navmarg-Research-and-Innovation-Private-Limited/61553628548617/"
-                    class="hover:underline"><i
-                      class="fa-brands fa-facebook"></i> Facebook</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 class="mb-4 text-md font-semibold text-white uppercase">News &
-                Events</h2>
-              <ul class="text-white">
-                <li class="mb-4">
-                  <a href="#" class="hover:underline"><i
-                      class="fa-solid fa-newspaper"></i> News</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline"><i
-                      class="fa-solid fa-chart-line"></i> Annual Report</a>
-                </li>
-                <li class="mb-4">
-                  <a href="#" class="hover:underline"><i
-                      class="fa-solid fa-image"></i> Gallery</a>
-                </li>
-              </ul>
-            </div>
+              <div>
+                  <h2 class="mb-3 text-md font-semibold text-white uppercase">Contact Us</h2>
+                  <ul class="text-white">
+                      <li class="mb-4">
+                          <a href="mailto:navmarg.pvt.ltd@gmail.com" class="hover:underline" target="_blank"><i class="fa-solid fa-envelope"></i> Email</a>
+                      </li>
+                      <li>
+                          <a href="tel:+917488404654" class="hover:underline"><i class="fa-solid fa-phone"></i> Phone</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-4 text-md font-semibold text-white uppercase">Follow Us</h2>
+                  <ul class="text-white">
+                      <li class="mb-4">
+                          <a href="https://www.linkedin.com/company/navmarg-research-and-innovation-private-limited/" class="hover:underline "><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                      </li>
+                      <li>
+                          <a href="https://www.facebook.com/people/Navmarg-Research-and-Innovation-Private-Limited/61553628548617/" class="hover:underline"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-4 text-md font-semibold text-white uppercase">News & Events</h2>
+                  <ul class="text-white">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline"><i class="fa-solid fa-newspaper"></i> News</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline"><i class="fa-solid fa-chart-line"></i> Annual Report</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline"><i class="fa-solid fa-image"></i> Gallery</a>
+                      </li>
+                  </ul>
+              </div>
           </div>
-        </div>
-        <hr class="border-gray-200 sm:mx-auto lg:mb-3" />
-        <div class="sm:flex sm:items-center sm:justify-center text-center">
-          <span class="text-sm text-white text-center">© 2024 Navmarg Research
-            and
-            Innovation Pvt
-            Ltd.
-          </span>
-        </div>
       </div>
-    </footer>
+      <hr class="border-gray-200 sm:mx-auto lg:mb-3" />
+      <div class="sm:flex sm:items-center sm:justify-center text-center">
+          <span class="text-sm text-white text-center">© 2024 Navmarg Research and
+              Innovation Pvt
+              Ltd.</a>
+          </span>
+      </div>
+  </div>
+</footer>
 
-  </body>
 
+
+</body>
 </html>
