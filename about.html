@@ -772,39 +772,75 @@
   </section>
 
 
+
+  <!--Configurations for tooltips-->
+  <div id="previous-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-blue-600 rounded-lg shadow-sm opacity-0 tooltip">
+      Go To Previous Page
+      <div class="tooltip-arrow" data-popper-arrow></div>
+  </div>
+  <div id="home-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-blue-600 rounded-lg shadow-sm opacity-0 tooltip">
+    Home
+    <div class="tooltip-arrow" data-popper-arrow></div>
+  </div>
+  <div id="about-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-blue-600 rounded-lg shadow-sm opacity-0 tooltip">
+    About Us
+    <div class="tooltip-arrow" data-popper-arrow></div>
+  </div>
+  <div id="research-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-blue-600 rounded-lg shadow-sm opacity-0 tooltip">
+    Our Research
+    <div class="tooltip-arrow" data-popper-arrow></div>
+  </div>
+  <div id="products-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-blue-600 rounded-lg shadow-sm opacity-0 tooltip">
+    Our Products
+    <div class="tooltip-arrow" data-popper-arrow></div>
+  </div>
+  <div id="team-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-blue-600 rounded-lg shadow-sm opacity-0 tooltip">
+    Our Team
+    <div class="tooltip-arrow" data-popper-arrow></div>
+  </div>
+  <div id="contact-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-blue-600 rounded-lg shadow-sm opacity-0 tooltip">
+    Contact Us
+    <div class="tooltip-arrow" data-popper-arrow></div>
+  </div>
+  <div id="next-tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-blue-600 rounded-lg shadow-sm opacity-0 tooltip">
+  Go To Next Page
+    <div class="tooltip-arrow" data-popper-arrow></div>
+  </div>
+  
+  
 <!--Navigation with numbers-->
   <nav class="flex justify-center mb-10 hidden md:flex">
     <ul class="inline-flex -space-x-px text-base h-10">
       <li>
-        <a href="index.html"
+        <a href="index.html" data-tooltip-target="previous-tooltip"
           class="flex items-center justify-center px-4 h-10 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">Previous</a>
       </li>
       <li>
-        <a href="index.html"
+        <a href="index.html" data-tooltip-target="home-tooltip"
           class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-house"></i></a>
       </li>
       <li>
-        <a href="about.html"
+        <a href="about.html" data-tooltip-target="about-tooltip"
           class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700"><i class="fa-solid fa-comment"></i></a>
       </li>
       <li>
-        <a href="research.html"
+        <a href="research.html" data-tooltip-target="research-tooltip"
           class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-book"></i></a>
       </li>
       <li>
-        <a href="product.html"
+        <a href="product.html" data-tooltip-target="products-tooltip"
           class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-box-open"></i></a>
       </li>
       <li>
-        <a href="team.html"
+        <a href="team.html" data-tooltip-target="team-tooltip"
           class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-people-group"></i></a>
       </li>
       <li>
-        <a href="contact.html"
+        <a href="contact.html" data-tooltip-target="contact-tooltip"
           class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-phone-volume"></i></a>
       </li>
       <li>
-        <a href="research.html"
+        <a href="research.html" data-tooltip-target="next-tooltip"
           class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 ">Next</a>
       </li>
     </ul>
@@ -847,8 +883,6 @@
 
     window.addEventListener("scroll", scrollFunction);              
 </script>
-
-
 
 <!--Footer section-->
 <footer class="text-white body-font bg-teal-500 p-3">
