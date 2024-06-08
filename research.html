@@ -73,7 +73,7 @@
                     <img alt="logo4" class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
                         src="page-1\img\logo4.webp"></a>
 
-                </a> <img alt="logo5" class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
+                <a> <img alt="logo5" class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
                     src="page-1\img\Azadi Ka amrit mahatosav.webp"></a>
             </div>
 
@@ -271,7 +271,7 @@
           <div class="rounded-lg h-120 overflow-hidden">
             <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1203x503">
           </div>
-          <h2 class="text-xl text-black font-medium text-center title-font mt-5"data-aos="fade-up" data-aos-duration="500">PHASE 1</h2>
+          <h2 class="text-xl text-black font-medium text-center title-font mt-5" data-aos="fade-up" data-aos-duration="500">PHASE 1</h2>
           <p class="text-center text-black leading-relaxed mt-2" data-aos="fade-up" data-aos-duration="500">6,28,000 Liter Water Treated from September 2021 to December 2022 in 3 Middle Schools and 2 community handpumps of Bhojpur and Buxar District of Bihar, India. 
             </p>
         </div>
@@ -279,8 +279,8 @@
           <div class="rounded-lg h-120 overflow-hidden">
             <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1204x504">
           </div>
-           <h2 class="text-xl font-medium title-font text-center text-black mt-5"data-aos="fade-up" data-aos-duration="500">PHASE 2</h2>
-          <p class="text-center text-black leading-relaxed mt-2"data-aos="fade-up" data-aos-duration="500">28,1,000 Liter Water Treated from  January 2023 to June 2023 in 5 Middle Schools of Bhojpur and Buxar, Bihar  	
+           <h2 class="text-xl font-medium title-font text-center text-black mt-5" data-aos="fade-up" data-aos-duration="500">PHASE 2</h2>
+          <p class="text-center text-black leading-relaxed mt-2" data-aos="fade-up" data-aos-duration="500">28,1,000 Liter Water Treated from  January 2023 to June 2023 in 5 Middle Schools of Bhojpur and Buxar, Bihar  	
           </p>
         </div>
       </div>
@@ -375,12 +375,11 @@
         </div>
           <div
             class="sm:w-full sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-            <p class="leading-relaxed text-lg text-justify text-blackmb-4 "data-aos="fade-up" data-aos-duration="500" ><br>
+            <p class="leading-relaxed text-lg text-justify text-blackmb-4" data-aos="fade-up" data-aos-duration="500" ><br>
               To foster community engagement and ownership of sustainability initiatives, geomapping efforts can be coupled with participatory approaches and incentive programs. By empowering stakeholders to actively participate in data collection and decision-making processes, geomapping initiatives can enhance transparency, accountability, and social cohesion. Through collaborative partnerships and shared governance structures, communities can work together to address shared environmental challenges and build resilient, sustainable futures.</p>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
 <!--Links to Patents, Publications, Thesis, Technology Presentations-->
@@ -714,7 +713,7 @@
 
   
 <!--Navigation with numbers-->
-<nav class="flex justify-center mb-10">
+<nav class="flex justify-center mb-10 hidden md:flex">
   <ul class="inline-flex -space-x-px text-base h-10">
     <li>
       <a href="about.html"
@@ -751,7 +750,40 @@
   </ul>
 </nav>
 
+  <!-- Scroll-to-top button -->
+  <button type="button"
+    class="fixed bottom-10 end-10 hidden rounded-full w-14 text-lg p-3 bg-teal-500 hover:bg-white active:bg-white hover:scale-110 hover:border-teal-500 border border-white hover:text-teal-500 text-white  hover:shadow-lg shadow-md transition duration-150 ease-in-out animate-bounce "
+    id="btn-back-to-top">
+    <span>
+      <i class="fa-solid fa-arrow-up"></i>
+    </span>
+  </button>
 
+  <!-- JavaScript to handle scrolling -->
+  <script>
+    // Get the button
+    const mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    const scrollFunction = () => {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.classList.remove("hidden");
+      } else {
+        mybutton.classList.add("hidden");
+      }
+    };
+    const backToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    window.addEventListener("scroll", scrollFunction);              
+  </script>
 
 <!--Footer section-->
 <footer class="text-white body-font bg-teal-500 p-3">
@@ -808,7 +840,7 @@
     <div class="sm:flex sm:items-center sm:justify-center text-center">
         <span class="text-sm text-white text-center">© 2024 Navmarg Research and
             Innovation Pvt
-            Ltd.</a>
+            Ltd.
         </span>
     </div>
 </div>
