@@ -73,7 +73,7 @@
                     <img alt="logo4" class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
                         src="page-1\img\logo4.webp"></a>
 
-                </a> <img alt="logo5" class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
+                <a> <img alt="logo5" class="w-20 h-20 mb-8 object-cover object-center inline-block border-0"
                     src="page-1\img\Azadi Ka amrit mahatosav.webp"></a>
             </div>
 
@@ -475,7 +475,7 @@
                         <h2 class="text-xl font-medium title-font text-gray-900 mt-5">M.A.R.U
                         </h2>
                         <p class="text-base leading-relaxed mt-2">MARU - Magnetic Arsenic Removal Unit: A Transformative Story 
-                            Navmarg Research and Innovation's MARU (Magnetic Arsenic Removal Unit) unveils groundbreaking technology. Powered by patented Molecular Magnetic Treatment, MARU eliminates diamagnetic arsenic ions without electricity or chemicals.</p>
+                            Navmarg Research and Innovation's MARU (Magnetic Arsenic Removal Unit) unveils groundbreaking technology. Powered by patented Molecular Magnetic Treatment, MARU eliminates diamagnetic arsenic ions without electricity or chemicals.</p>
                         <a class="text-blue-500 inline-flex items-center mt-3">Learn More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -493,7 +493,7 @@
                         <h2 class="text-xl font-medium title-font text-gray-900 mt-5">M.A.R.U's Pilot Trials
                         </h2>
                         <p class="text-base leading-relaxed mt-2">
-                            MARU, Navmarg's arsenic removal technology, triumphed in pilot trials, treating 29 lakh liters of water across nine locations in two years. Ongoing trials at a Bihar school, serving 1135 children, demonstrate MARU's scalability. CSR Grant secured: 10.30 lakhs from ICICI Foundation for stability in high-scale deployments.</p>
+                            MARU, Navmarg's arsenic removal technology, triumphed in pilot trials, treating 29 lakh liters of water across nine locations in two years. Ongoing trials at a Bihar school, serving 1135 children, demonstrate MARU's scalability. CSR Grant secured: 10.30 lakhs from ICICI Foundation for stability in high-scale deployments.</p>
                         
                         <a class="text-blue-500 inline-flex items-center mt-3">Learn More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -532,7 +532,7 @@
                         <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Our Philanthropy
                             </h2>
                            <p class="text-base leading-relaxed mt-2">
-                               Through pilot trials and research grants, our societal contributions extended beyond technology. We donated six submersible pumps, maintained two school drinking water facilities, and conducted various community-oriented initiatives. These actions, undertaken during the pilot phase, exemplify our commitment to holistic impact and community welfare.</p>
+                               Through pilot trials and research grants, our societal contributions extended beyond technology. We donated six submersible pumps, maintained two school drinking water facilities, and conducted various community-oriented initiatives. These actions, undertaken during the pilot phase, exemplify our commitment to holistic impact and community welfare.</p>
                         <a class="text-blue-500 inline-flex items-center mt-3">Learn More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -549,7 +549,7 @@
                         </div>
                         <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Our Impact
                         </h2>
-                        <p class="text-base leading-relaxed mt-2">During pilots, our initiatives benefited communities with submersible pumps, improved school water facilities, and other welfare projects. Adhering to ethical codes, non-commercial pilot units were decommissioned. Seeking CSR partnerships for deploying ready commercial units to these sites, prioritizing community welfare.</p>
+                        <p class="text-base leading-relaxed mt-2">During pilots, our initiatives benefited communities with submersible pumps, improved school water facilities, and other welfare projects. Adhering to ethical codes, non-commercial pilot units were decommissioned. Seeking CSR partnerships for deploying ready commercial units to these sites, prioritizing community welfare.</p>
                         <a class="text-blue-500 inline-flex items-center mt-3">Learn More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -651,7 +651,7 @@
 
                 <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60"
                     data-aos="flip-left">
-                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"><!--Write here Heading-></h2>
+                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2"><!--Write here Heading --></h2>
                     <p class="leading-relaxed text-base mb-4"><!--Write here--></p>
                 </div>
 
@@ -665,7 +665,7 @@
 
 
 <!--Navigation with numbers-->
-<nav class="flex justify-center mb-10">
+<nav class="flex justify-center mb-10 hidden md:flex">
     <ul class="inline-flex -space-x-px text-base h-10">
       <li>
         <a href="index.html"
@@ -702,7 +702,40 @@
     </ul>
   </nav>
 
+  <!-- Scroll-to-top button -->
+  <button type="button"
+    class="fixed bottom-10 end-10 hidden rounded-full w-14 text-lg p-3 bg-teal-500 hover:bg-white active:bg-white hover:scale-110 hover:border-teal-500 border border-white hover:text-teal-500 text-white  hover:shadow-lg shadow-md transition duration-150 ease-in-out animate-bounce "
+    id="btn-back-to-top">
+    <span>
+      <i class="fa-solid fa-arrow-up"></i>
+    </span>
+  </button>
 
+  <!-- JavaScript to handle scrolling -->
+  <script>
+    // Get the button
+    const mybutton = document.getElementById("btn-back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    const scrollFunction = () => {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.classList.remove("hidden");
+      } else {
+        mybutton.classList.add("hidden");
+      }
+    };
+    const backToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", backToTop);
+
+    window.addEventListener("scroll", scrollFunction);              
+  </script>
 
 <!--Footer section-->
 <footer class="text-white body-font bg-teal-500 p-3">
@@ -759,7 +792,7 @@
       <div class="sm:flex sm:items-center sm:justify-center text-center">
           <span class="text-sm text-white text-center">© 2024 Navmarg Research and
               Innovation Pvt
-              Ltd.</a>
+              Ltd.
           </span>
       </div>
   </div>
