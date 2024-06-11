@@ -26,6 +26,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
 </head>
 
 
@@ -281,7 +282,7 @@
     </section>
 
 <!--What we do section-->
-    <section class="body-font bg-teal-500 shadow-lg overflow-hidden mb-20">
+    <section class="body-font bg-teal-500 shadow-lg overflow-hidden mb-11">
         <div class="container px-5 py-12 mx-auto">
             <div class="flex flex-col text-center w-full mb-7">
                 <h1 class="text-4xl text-white tracking-widest font-bold title-font mb-1">WHAT WE DO
@@ -433,18 +434,24 @@
 
 <!--Our work section-->
     <section class="body-font shadow-lg">
-        <div class="container px-5 py-12 mx-auto relative">
+        <div class="container px-5 mx-auto relative">
             <div class="flex flex-col text-center w-full mb-10">
-                <h1 class="sm:text-4xl text-2xl text-teal-500 tracking-widest font-bold title-font mb-1">OUR
+                <h1 class="text-4xl text-teal-500 tracking-widest font-bold title-font mb-1">OUR
                     WORK</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-white ">What
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-black">What
                     we've done for people</p>
             </div>
 
-            <div class="flex overflow-hidden relative">
+            <div class="flex overflow-hidden relative transition-transform duration-700 ease-in-out">
                 <div class="flex items-center slider-container">
 
-                    <div class="p-4 md:w-1/2 md:w-1/2 sm:mb-0 mb-6 slider-item h-full" data-aos="fade-left">
+                    <div>
+                        <button
+                            class="relative prev-btn bg-blue-500 rounded-full w-10 h-10 text-white hover:text-blue-500 hover:bg-white hover:border hover:border-blue-500"
+                            onclick="changeSlide(-1)"><i class="fa-solid fa-arrow-left text-2xl"></i></button>
+                    </div>
+
+                    <div class="p-4 md:w-1/2 md:w-1/2 sm:mb-0 mb-6 slider-item h-full" data-aos="fade-left" data-aos-duration="1500">
                         <div class="rounded-lg h-64 overflow-hidden">
                             <img alt="content"
                                 class=" object-contain object-center h-full w-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
@@ -462,7 +469,7 @@
                         </a>
                     </div>
 
-                    <div class="p-4 md:w-1/2 sm:mb-0 mb-6 slider-item h-full" data-aos="fade-left">
+                    <div class="p-4 md:w-1/2 sm:mb-0 mb-6 slider-item h-full" data-aos="fade-left" data-aos-duration="1500">
                         <div class="rounded-lg h-64 overflow-hidden">
                             <img alt="content"
                                 class="object-contain object-center h-full w-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
@@ -481,7 +488,7 @@
                         </a>
                     </div>
 
-                    <div class="p-4 md:w-1/2 sm:mb-0 mb-6 slider-item h-full" data-aos="fade-left">
+                    <div class="p-4 md:w-1/2 sm:mb-0 mb-6 slider-item h-full" data-aos="fade-left" data-aos-duration="1500">
                         <div class="rounded-lg h-64 overflow-hidden">
                             <img alt="content"
                                 class="object-contain object-center h-full w-full transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
@@ -535,17 +542,15 @@
                             </svg>
                         </a>
                     </div>
+
+                    <div>
+                        <button
+                            class="next-btn bg-blue-500 rounded-full w-10 h-10 text-white hover:text-blue-500 hover:bg-white hover:border hover:border-blue-500"
+                            onclick="changeSlide(-1)"><i class="fa-solid fa-arrow-right text-2xl"></i></button>
+                    </div>
                 </div>
             </div>
 
-            <div class="flex  justify-center mt-16 space-x-20 py-5">
-                <button
-                    class="prev-btn font-semibold border-2 border-blue-400 text-blue-500 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  p-2 ml-2 rounded-full px-8"
-                    onclick="changeSlide(-1)">Previous</button>
-                <button
-                    class="next-btn font-semibold  border-2 border-blue-400 text-blue-500 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 p-2 ml-2 rounded-full px-8"
-                    onclick="changeSlide(1)">Next</button>
-            </div>
         </div>
     </section>
 
