@@ -9,7 +9,7 @@
 ### Design:
 **Platform:** Web (current)
 
-**Tech stack:** [Tailblocks](https://tailblocks.cc/), [Tailwind CSS](https://tailwindcss.com/docs/installation), [AOS animation](https://michalsnik.github.io/aos/), [HTML5](#) and [PHP 8.0](#)
+**Tech stack:** [Tailblocks](https://tailblocks.cc/), [Tailwind CSS](https://tailwindcss.com/docs/installation), [AOS animation](https://michalsnik.github.io/aos/), [HTML5](#), [JAVASCRIPT](#) and [PHP 8.0](#)
 
 
 <br/>
