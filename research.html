@@ -723,142 +723,166 @@
 
 
 
-  
-<!--Navigation with numbers-->
-<nav class="flex justify-center mb-10 hidden md:flex">
-  <ul class="inline-flex -space-x-px text-base h-10">
-    <li>
-      <a href="about.html"
-        class="flex items-center justify-center px-4 h-10 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 ">Previous</a>
-    </li>
-    <li>
-      <a href="index.html"
-        class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-house"></i></a>
-    </li>
-    <li>
-      <a href="about.html"
-        class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-comment"></i></a>
-    </li>
-    <li>
-      <a href="research.html"
-        class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700"><i class="fa-solid fa-book"></i></a>
-    </li>
-    <li>
-      <a href="product.html"
-        class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-box-open"></i></a>
-    </li>
-    <li>
-      <a href="team.html"
-        class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-people-group"></i></a>
-    </li>
-    <li>
-      <a href="contact.html"
-        class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 "><i class="fa-solid fa-phone-volume"></i></a>
-    </li>
-    <li>
-      <a href="product.html"
-        class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 ">Next</a>
-    </li>
-  </ul>
-</nav>
 
-  <!-- Scroll-to-top button -->
-  <button type="button"
-    class="fixed bottom-10 end-10 hidden rounded-full w-14 text-lg p-3 bg-teal-500 hover:bg-white active:bg-white hover:scale-110 hover:border-teal-500 border border-white hover:text-teal-500 text-white  hover:shadow-lg shadow-md transition duration-150 ease-in-out animate-bounce "
-    id="btn-back-to-top">
-    <span>
-      <i class="fa-solid fa-arrow-up"></i>
-    </span>
-  </button>
+    <!--Bottom Navigation with Numbers-->
+    <nav class="mb-20 flex justify-center flex-wrap px-2 sm:px-12" aria-label="Pagination">
 
-  <!-- JavaScript to handle scrolling -->
-  <script>
-    // Get the button
-    const mybutton = document.getElementById("btn-back-to-top");
+        <a class="rounded-lg border border-teal-500 px-2 py-2 text-gray-700 mb-1" href="about.html">
+            <span class="sr-only">Previous</span>
+            <svg class="mt-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                    clip-rule="evenodd">
+                </path>
+            </svg>
+        </a>
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    const scrollFunction = () => {
-      if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-      ) {
-        mybutton.classList.remove("hidden");
-      } else {
-        mybutton.classList.add("hidden");
-      }
-    };
-    const backToTop = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    };
+        <a class="rounded-lg border border-teal-500 px-4 py-2 text-gray-700 mx-1 mb-1" href="index.html">1
+        </a>
+        <a class="rounded-lg border border-teal-500 px-4 py-2 text-gray-700 mx-1 mb-1" href="about.html">2
+        </a>
+        <a class="rounded-lg border border-teal-500 bg-teal-500 px-4 py-2 text-white mx-1 mb-1" href="research.html">3
+        </a>
+        <a class="rounded-lg border border-teal-500 px-4 py-2 text-gray-700 mx-1 mb-1" href="product.html">4
+        </a>
+        <a class="rounded-lg border border-teal-500 px-4 py-2 text-gray-700 mx-1 mb-1" href="team.html">5
+        </a>
+        <a class="rounded-lg border border-teal-500 px-4 py-2 text-gray-700 mx-1 mb-1" href="contact.html">6
+        </a>
 
-    // When the user clicks on the button, scroll to the top of the document
-    mybutton.addEventListener("click", backToTop);
+        <a class="rounded-lg border border-teal-500 px-2 py-2 text-gray-700 mb-1" href="product.html">
+            <span class="sr-only">Next</span>
+            <svg class="mt-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd">
+                </path>
+            </svg>
+        </a>
 
-    window.addEventListener("scroll", scrollFunction);              
-  </script>
+    </nav>
 
-<!--Footer section-->
-<footer class="text-white body-font bg-teal-500 p-3">
-<div class="mx-auto max-w-screen-xl">
-    <div class="md:flex md:justify-between m-5 text-center justify-center items-center flex-row">
-        <div class="mb-6 md:mb-0 mt-6">
-            <a href="index.html" class="flex items-center">
-                <img alt="logo0"
-            class="w-24 h-24 object-cover object-center rounded-full inline-block items-center justify-center bg-white"
-            src="page-1\img\logo0.webp">
-                <span class="self-center text-2xl font-medium title-font font-sans whitespace-nowrap dark:text-white ms-5 text-wrap">Navmarg Research and Innovation</span>
-            </a>
-        </div>
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            <div>
-                <h2 class="mb-3 text-md font-semibold text-white uppercase">Contact Us</h2>
-                <ul class="text-white">
-                    <li class="mb-4">
-                        <a href="mailto:navmarg.pvt.ltd@gmail.com" class="hover:underline" target="_blank"><i class="fa-solid fa-envelope"></i> Email</a>
-                    </li>
-                    <li>
-                        <a href="tel:+917488404654" class="hover:underline"><i class="fa-solid fa-phone"></i> Phone</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-4 text-md font-semibold text-white uppercase">Follow Us</h2>
-                <ul class="text-white">
-                    <li class="mb-4">
-                        <a href="https://www.linkedin.com/company/navmarg-research-and-innovation-private-limited/" class="hover:underline "><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/people/Navmarg-Research-and-Innovation-Private-Limited/61553628548617/" class="hover:underline"><i class="fa-brands fa-facebook"></i> Facebook</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2 class="mb-4 text-md font-semibold text-white uppercase">News & Events</h2>
-                <ul class="text-white">
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline"><i class="fa-solid fa-newspaper"></i> News</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline"><i class="fa-solid fa-chart-line"></i> Annual Report</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="#" class="hover:underline"><i class="fa-solid fa-image"></i> Gallery</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <hr class="border-gray-200 sm:mx-auto lg:mb-3" />
-    <div class="sm:flex sm:items-center sm:justify-center text-center">
-        <span class="text-sm text-white text-center">© 2024 Navmarg Research and
-            Innovation Pvt
-            Ltd.
+
+
+
+
+
+
+    <!-- Scroll-to-top button -->
+    <button type="button"
+        class="fixed bottom-10 end-10 hidden rounded-full w-14 text-lg p-3 bg-teal-500 hover:bg-white active:bg-white hover:scale-110 hover:border-teal-500 border border-white hover:text-teal-500 text-white  hover:shadow-lg shadow-md transition duration-150 ease-in-out animate-bounce "
+        id="btn-back-to-top">
+        <span>
+            <i class="fa-solid fa-arrow-up"></i>
         </span>
-    </div>
-</div>
-</footer>
+    </button>
+
+    <!-- JavaScript to handle scrolling -->
+    <script>
+        // Get the button
+        const mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        const scrollFunction = () => {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.classList.remove("hidden");
+            } else {
+                mybutton.classList.add("hidden");
+            }
+        };
+        const backToTop = () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        window.addEventListener("scroll", scrollFunction);              
+    </script>
+
+
+
+    <!-- Footer section -->
+    <footer class="relative bg-teal-500 text-white">
+        <!-- Top Wave Divider -->
+        <div class="absolute top-0 w-full overflow-hidden">
+            <svg class="block w-full h-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0 0l1200 0 0 120 0-4.98C1132.19 118.92 1055.71 111.31 985.66 92.83 906.67 72 823.78 31 743.84 14.19c-82.26-17.34-168.06-16.33-250.45 0.39-57.84 11.73-114 31.07-172 41.86A600.21 600.21 0 0 1 0 27.35V0Z"
+                    fill="#ffffff"></path>
+            </svg>
+        </div>
+
+        <div class="pt-20 mx-auto max-w-screen-xl">
+            <div class="md:flex md:justify-between m-5 text-center justify-center items-center flex-row">
+                <div class="mb-6 md:mb-0 mt-6">
+                    <a href="index.html" class="flex items-center">
+                        <img alt="logo0"
+                            class="w-24 h-24 object-cover object-center rounded-full inline-block items-center justify-center bg-white"
+                            src="page-1/img/logo0.webp">
+                        <span class="self-center text-2xl font-medium title-font font-sans whitespace-nowrap">Navmarg
+                            Research and Innovation</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-3 text-md font-semibold text-white uppercase">Contact Us</h2>
+                        <ul class="text-white">
+                            <li class="mb-4">
+                                <a href="mailto:navmarg.pvt.ltd@gmail.com" class="hover:underline" target="_blank"><i
+                                        class="fa-solid fa-envelope"></i> Email</a>
+                            </li>
+                            <li>
+                                <a href="tel:+917488404654" class="hover:underline"><i class="fa-solid fa-phone"></i>
+                                    Phone</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-4 text-md font-semibold text-white uppercase">Follow Us</h2>
+                        <ul class="text-white">
+                            <li class="mb-4">
+                                <a href="https://www.linkedin.com/company/navmarg-research-and-innovation-private-limited/"
+                                    class="hover:underline "><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/people/Navmarg-Research-and-Innovation-Private-Limited/61553628548617/"
+                                    class="hover:underline"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-4 text-md font-semibold text-white uppercase">News & Events</h2>
+                        <ul class="text-white">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline"><i class="fa-solid fa-newspaper"></i> News</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline"><i class="fa-solid fa-chart-line"></i> Annual
+                                    Report</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline"><i class="fa-solid fa-image"></i> Gallery</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-gray-200 sm:mx-auto lg:mb-3" />
+            <div class="sm:flex sm:items-center sm:justify-center text-center">
+                <span class="text-sm text-white text-center">© 2024 Navmarg Research and Innovation Pvt Ltd.</span>
+            </div>
+        </div>
+    </footer>
 
 
 
 </body>
+
 </html>
