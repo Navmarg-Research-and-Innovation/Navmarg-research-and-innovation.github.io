@@ -26,6 +26,64 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <style>
+      .waves{
+      position: absolute;
+      height: 300px;
+      bottom: -135px;
+      width: 100%;
+    }
+    .contain{
+      height: 85vh;
+      background: linear-gradient(#ffffff, #3498db);
+      position: relative;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .contain .content .heading {
+    margin-top: -200px; 
+    }
+    .contain .content .desc {
+    line-height: 1.6; /* Increase line height */
+    text-align: justify; /* Justify text for neat alignment */
+    margin-top: 20px; /* Add margin to space out the paragraph from the heading */
+    }
+    .wave{
+      width: 2402px;
+      height: 427px;
+      background: url("https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png") no-repeat center bottom;
+      position: absolute;
+      animation: wave 5s ease-in-out alternate infinite;
+      left: -180px;
+      bottom: 0px;
+    }
+    .wave.a{
+      background-position: 0 -854px;
+    }
+    .wave.b{
+      animation-delay: 6s;
+      background-position: 0 -427px;
+    }
+    .wave.c{
+      animation-delay: 1.2s;
+      background-position: 0 0;
+    }
+
+    @keyframes wave{
+      0%{
+        transform: translate(0px, 0px);
+      }
+      50%{
+        transform: translate(-80px, 30px);
+      }
+      100%{
+        transform: translate(160px, -60px);
+      }
+    }
+      
+    </style>
 </head>
 
 
@@ -121,32 +179,25 @@
     </header>
 
 <!--About title section-->
-  <section>
-    <div class="bg-image bg-cover bg-center w-full">
-
-      <div class="container md:pt-20 md:px-20 p-10 mx-auto max-w-full md:my-0 2xl:my-20">
-        <div class="flex w-full mb-5 px-8 flex-wrap">
-          <h1 class="text-5xl md:text-6xl font-bold title-font text-teal-500 lg:w-1/2 lg:mb-0 mb-4">Our Research Initiatives
-          </h1>
-        </div>
-        <div class="flex w-full mb-5 px-8 flex-wrap">
-          <div class="h-1 w-40 bg-teal-500 px-8 flex-wrap rounded-full" data-aos="fade-right" data-aos-duration="1500">
-          </div>
-        </div>
-        <div class="text-black">
-          <h1 class="ml-3 mt-5 sm:text-3xl text-2xl font-medium title-font font-sans mb-4 text-black-900">
-            <div data-aos="fade-right" data-aos-duration="2000">
-            Navmarg R & I leverages innovative technologies to combat water quality issues, notably through its Molecular Magnetic 
-            Technology For Arsenic Removal (METAL). <br>
-            Additionally, the company focuses on waste management mapping and environmental impact assessment via geospatial 
-            analysis, integrating geosciences and data informatics for comprehensive solutions.
-            </div>
-          </h1>
-        </div>
-      </div>
-
+<div class="contain items-center justify-center text-center">
+  <div class="content">
+    <h1 class="text-5xl md:text-6xl font-bold title-font text-black mb-10 heading">
+      Our Research Initiatives
+    </h1>
+    <div class="text-2xl m-10 desc ps-20 pe-20 pt-10" data-aos="fade-right" data-aos-duration="2000">
+      Navmarg R & I leverages innovative technologies to combat water quality issues, notably through its Molecular Magnetic 
+      Technology For Arsenic Removal (METAL). <br>
+      Additionally, the company focuses on waste management mapping and environmental impact assessment via geospatial 
+      analysis, integrating geosciences and data informatics for comprehensive solutions.
     </div>
-  </section>
+  </div>
+  
+  <div class="waves w-full">
+    <div class="wave a"></div>   
+    <div class="wave b"></div>
+    <div class="wave c"></div>
+  </div>
+</div>
 
 <!--Challenges in Arsenic Removal section-->
 <section class="text-gray-600 body-font">
