@@ -32,6 +32,7 @@
       height: 300px;
       bottom: -135px;
       width: 100%;
+      z-index: 1; 
     }
     .contain{
       height: 85vh;
@@ -41,14 +42,24 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      padding: 0 20px;
+      z-index: 2;
     }
+    .contain .content {
+        position: relative;
+        z-index: 3;
+        text-align: center;
+      }
     .contain .content .heading {
-    margin-top: -200px; 
+      margin-top: -150px; 
+      font-size: 5rem;
+      z-index: 3;
     }
     .contain .content .desc {
-    line-height: 1.6; /* Increase line height */
-    text-align: justify; /* Justify text for neat alignment */
-    margin-top: 20px; /* Add margin to space out the paragraph from the heading */
+      line-height: 1.6; 
+      text-align: left;
+      margin-top: 20px; 
+      z-index: 3;
     }
     .wave{
       width: 2402px;
@@ -61,14 +72,17 @@
     }
     .wave.a{
       background-position: 0 -854px;
+      z-index: 1; 
     }
     .wave.b{
       animation-delay: 6s;
       background-position: 0 -427px;
+      z-index: 1; 
     }
     .wave.c{
       animation-delay: 1.2s;
       background-position: 0 0;
+      z-index: 1; 
     }
 
     @keyframes wave{
@@ -81,6 +95,30 @@
       100%{
         transform: translate(160px, -60px);
       }
+    }
+
+    @media (max-width: 768px) {
+        .contain .content .heading {
+            font-size: 3rem;
+            margin-top: +100px; 
+        }
+
+        .contain .content .desc {
+            font-size: 1rem; /* Smaller font size for paragraph */
+            margin-top: 15px; 
+        }
+    }
+
+    @media (max-width: 480px) {
+        .contain .content .heading {
+            font-size: 2.5rem;
+            margin-top: +120px; 
+        }
+
+        .contain .content .desc {
+            font-size: 0.875rem; /* Even smaller font size for paragraph */
+            margin-top: 10px; 
+        }
     }
       
     </style>
@@ -181,7 +219,7 @@
 <!--About title section-->
 <div class="contain items-center justify-center text-center">
   <div class="content">
-    <h1 class="text-5xl md:text-6xl font-bold title-font text-black mb-10 heading">
+    <h1 class="text-5xl md:text-6xl font-bold title-font text-black mb-10 heading text-center">
       Our Research Initiatives
     </h1>
     <div class="text-2xl m-10 desc ps-20 pe-20 pt-10" data-aos="fade-right" data-aos-duration="2000">
