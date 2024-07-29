@@ -32,6 +32,7 @@
       height: 300px;
       bottom: -135px;
       width: 100%;
+      z-index: 1; 
     }
     .contain{
       height: 85vh;
@@ -41,14 +42,24 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      padding: 0 20px;
+      z-index: 2;
     }
+    .contain .content {
+        position: relative;
+        z-index: 3;
+        text-align: center;
+      }
     .contain .content .heading {
-    margin-top: -200px; 
+      margin-top: -150px; 
+      font-size: 5rem;
+      z-index: 3;
     }
     .contain .content .desc {
-    line-height: 1.6; /* Increase line height */
-    text-align: justify; /* Justify text for neat alignment */
-    margin-top: 20px; /* Add margin to space out the paragraph from the heading */
+      line-height: 1.6; 
+      text-align: left;
+      margin-top: 20px; 
+      z-index: 3;
     }
     .wave{
       width: 2402px;
@@ -61,14 +72,17 @@
     }
     .wave.a{
       background-position: 0 -854px;
+      z-index: 1; 
     }
     .wave.b{
       animation-delay: 6s;
       background-position: 0 -427px;
+      z-index: 1; 
     }
     .wave.c{
       animation-delay: 1.2s;
       background-position: 0 0;
+      z-index: 1; 
     }
 
     @keyframes wave{
@@ -81,6 +95,30 @@
       100%{
         transform: translate(160px, -60px);
       }
+    }
+
+    @media (max-width: 768px) {
+        .contain .content .heading {
+            font-size: 3rem;
+            margin-top: +100px; 
+        }
+
+        .contain .content .desc {
+            font-size: 1rem; /* Smaller font size for paragraph */
+            margin-top: 15px; 
+        }
+    }
+
+    @media (max-width: 480px) {
+        .contain .content .heading {
+            font-size: 2.5rem;
+            margin-top: +120px; 
+        }
+
+        .contain .content .desc {
+            font-size: 0.875rem; /* Even smaller font size for paragraph */
+            margin-top: 10px; 
+        }
     }
       
     </style>
@@ -181,7 +219,7 @@
 <!--About title section-->
 <div class="contain items-center justify-center text-center">
   <div class="content">
-    <h1 class="text-5xl md:text-6xl font-bold title-font text-black mb-10 heading">
+    <h1 class="text-5xl md:text-6xl font-bold title-font text-black mb-10 heading text-center">
       Our Research Initiatives
     </h1>
     <div class="text-2xl m-10 desc ps-20 pe-20 pt-10" data-aos="fade-right" data-aos-duration="2000">
@@ -344,35 +382,22 @@
                 <p class="text-gray-100 text-lg">28,1,000 Liter Water Treated from January 2023 to June 2023 in 5 Middle Schools of Bhojpur and Buxar, Bihar</p>
             </div>
         </div>
-    </div>
-    </div>
-  </section>
 
-<!--Crafting New Tech Heading section-->
-  <section class=" body-font container px-12 pt-12">
-    <div class="container px-15 mx-auto">
-      <div class="flex flex-col">
-        <div class="flex flex-wrap sm:flex-row flex-col mb-6 ms-20" data-aos="slide-right" data-aos-duration="1500">
-          <h1 class="sm:w-2/5 text-teal-500 font-bold title-font text-4xl mb-2 sm:mb-0">CRAFTING TECHNOLOGIES FROM SCRATCH</h1>
-        </div>
+        <!-- Stack 3 -->
+        <div class="col-span-4 w-full h-full" data-aos="slide-up" data-aos-duration="1500">
+          <div class="w-full h-full bg-teal-500 rounded-md p-4 md:pl-4">
+              <h1 class="text-white text-2xl font-medium py-2">PHASE 3</h1>
+              <p class="text-gray-100 text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis officiis officia vero aperiam fugiat, quaerat facilis fuga repudiandae error eius impedit maxime, rem voluptatibus ipsa similique esse aliquid. Deserunt, repellat!</p>
+            </div>
       </div>
+      <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+          <div class="h-full w-1 bg-black"></div>
+          <div class="absolute w-6 h-6 rounded-full bg-black z-10 text-white text-center">3</div>
+      </div>
+      <div class="col-span-4 w-full h-full"></div>
+
+         
     </div>
-  </section>
-
-<!--Mission description section-->
-  <section class="body-font font-courier font-base section-gap" data-aos="fade-up">
-    <div class="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
-      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <p class="mb-8 leading-relaxed text-justify">At the core of our mission is a relentless drive for innovation to combat urgent environmental challenges. We harness state-of-the-art technology and interdisciplinary expertise to pioneer groundbreaking solutions from inception. Our approach seamlessly blends rigorous scientific research, advanced engineering principles, and unwavering environmental stewardship. The result is a suite of sustainable solutions meticulously crafted to deliver tangible benefits to communities globally.</p>
-
-        <ul class="list-disc py-4 px-8 " data-aos="fade-up" data-aos-duration="500">
-          <li class="list-disc py-4 ">Interdisciplinary Excellence: Our approach combines the best minds from various disciplines, fostering collaboration and innovation. By integrating expertise in chemistry, engineering, and environmental science, we develop holistic solutions that address complex challenges effectively.</li>
-          <li>Sustainability at Core: Sustainability is not just a goal; it's a guiding principle in everything we do. From concept to implementation, we prioritize eco-friendly practices and materials. Our solutions are designed to minimize environmental impact while maximizing long-term benefits for communities and ecosystems.</li>
-        </ul>
-      </div>
-      <div class="lg:w-1/2 w-5/6">
-        <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
-      </div>
     </div>
   </section>
 
