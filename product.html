@@ -121,46 +121,79 @@
                     <button onclick=" window.location.href='contact.html' ;"
                         class="mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-200 duration-300 rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full ">CONTACT
                     </button>
+
+                    <div class="relative">
+                        <button onclick="toggleDropdown()"
+                            class=" gap-2 mr-5 inline-flex items-center border-0 py-1 px-3 focus:outline-none rounded font-medium title-font font-courier text-xl text-blue-900 mb-1 py-2 px-4 rounded-full">CORPORATE<i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <div id="dropdown" class="hidden absolute bg-white text-blue-900 rounded-lg shadow-lg mt-2 z-50">
+                            <a href="" class="block px-4 py-2 hover:bg-teal-200">Annual Report</a>
+                            <a href="" class="block px-4 py-2 hover:bg-teal-200">CSR</a>
+                            <a href="" class="block px-4 py-2 hover:bg-teal-200">Brochures</a>
+                            <a href="" class="block px-4 py-2 hover:bg-teal-200">Investors</a>
+                        </div>
+                    </div>
                 </nav>
             </div>
 
         </div>
     </header>
 
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown");
+            if (dropdown.classList.contains("hidden")) {
+                dropdown.classList.remove("hidden");
+            } else {
+                dropdown.classList.add("hidden");
+            }
+        }
+    </script>
 
-
-    <!--Page Title section-->
-    <section class="relative mb-10 ">
-        <div class="absolute inset-x-0 bottom-0">
-            <svg viewBox="0 0 224 12" fill="currentColor" class="w-full -mb-1 text-white" preserveAspectRatio="none">
-                <path
-                    d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z">
-                </path>
-            </svg>
-        </div>
-
-        <div
-            class="flex flex-1 w-full flex-col items-center justify-center text-center px-4 py-20 bg-gradient-to-r from-green-100/100 via-teal-50 to-green-100/100">
-
-            <h1 class="text-4xl md:text-5xl font-bold title-font text-teal-900 mb-6"
-                data-aos="fade-up">
-                We care for
-                <span class="relative whitespace-nowrap text-teal-600">
-                    <span class="relative">all</span>
-                </span>
-            </h1>
-            <h2 class="mx-auto mt-12 max-w-xl text-md sm:text-white-400 text-white-500 " data-aos="fade-up">
-                We offer the widest range of products and solutions to treat, arsenic-contaminated water, water quality
-                mapping &amp; autonomus monitoring systems,
-                meeting requirements of industries, communities and homes in India and globally.
-            </h2>
-        </div>
-
-    </section>
-
-
-
-
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+            
+            <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <!-- Left Side: Company Info -->
+                    <div class="w-full md:w-1/2 mb-12 md:mb-0">
+                        <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                            WE<br>CARE<br>FOR ALL
+                        </h1>
+                        <p class="text-xl mb-8 text-gray-300">We offer the widest range of products and solutions to treat, arsenic-contaminated water, water quality mapping & autonomous monitoring systems, meeting requirements of industries, communities and homes in India and globally.</p>
+                    </div>
+                    
+                    <!-- Right Side: Features -->
+                    <div class="w-full md:w-1/2 md:pl-12">
+                        <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-8 shadow-2xl">
+                            <h2 class="text-3xl font-semibold mb-6 uppercase">Why Navmarg?</h2>
+                            <ul class="space-y-4">
+                                <li class="flex items-center gap-3">
+                                    <i class="fa-solid fa-hand-fist text-[#fffdd0] text-2xl"></i>
+                                    <span class="text-2xl">Proven Technology</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fa-solid fa-money-bill-wave text-[#ffff00] text-2xl"></i>
+                                    <span class="text-2xl">Cost-Effective</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fa-solid fa-leaf text-teal-500 text-2xl"></i>
+                                    <span class="text-2xl">Scalable & Sustainable</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fa-solid fa-bolt text-blue-500 text-2xl"></i>
+                                    <span class="text-2xl">Holistic Approach</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!--METAL description section-->
 
